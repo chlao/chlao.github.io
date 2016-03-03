@@ -1,0 +1,378 @@
+.left{
+    background-color: black;
+    text-align: center;
+}
+.right h2, .right p{
+	margin-left: auto;
+	margin-right: auto;
+}
+.right{
+    display: flex;
+    justify-content: center;
+}
+.rightcontent{
+    width: 60%;
+    align-self: center;
+}
+.helper{
+	display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.projectimg{
+    width: 90%;
+}
+#moreprojects{
+	background-color: white;
+}
+#moreprojects .title{
+	color: black;
+}
+
+.project img{
+	width: 300px;
+	height: 300px;
+}
+#content section > h2{
+    padding-top: 75px;
+}
+.project{
+    display: inline-block;
+    position: relative;
+    margin-right: 15px;
+}
+#moreprojects::last-child{
+	margin-right: 0;
+}
+.overlay{
+    background-color: #232223; 
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    top: 0; 
+    left: 0;
+    opacity: 0; 
+    transition: all .5s;
+}
+#imagegrid img:hover .overlay, .overlay:hover{
+    opacity: .85; 
+}
+#imagegrid img:hover .overlaytext, .overlay:hover .overlaytext{
+    opacity: 1; 
+    top: 0; 
+}
+.overlaytext{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    opacity: 0;
+    padding-left: 30px; 
+    line-height: .4em;
+    transition: all .5s;
+}
+.overlaytext h3{
+    font-size: 32px;
+    letter-spacing: 0.05em;
+    font-weight: normal;
+}
+.overlaytext p{
+    font-size: 22px;
+    font-weight: lighter;
+    line-height: 1.1em;
+}
+.project img{
+    border: 10px solid black;
+    object-fit: cover;
+}
+#secondproj img{
+    object-position: 0 0; 
+}
+#imagegrid{
+	margin: 0 auto;
+	width: 1020px;
+}
+#moreprojects{
+	padding-top: 60px;
+	padding-bottom: 100px;
+}
+#hiddennav{
+	display: block;
+    position: fixed;
+    z-index: 5;
+}
+.subtitle{
+    letter-spacing: 0.05em;
+}
+.midsection{
+    margin-right: auto; 
+    margin-left: auto; 
+    margin-bottom: 100px;   
+}
+.midsection > p, .header > p, section > p{
+    width: 60%; 
+    margin-bottom: 20px;
+}
+/* Section subtitle */ 
+section{
+    padding-bottom: 50px;
+}
+section > p{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+section > img{
+    margin: 0 auto;
+    display: block;
+}
+.midsection > div:not(#storyboard > div > div){
+    margin-top: 75px;
+}
+.subsection{
+    margin: 70px auto; 
+}
+.subsection > h4{
+    font-size: 28px;
+    letter-spacing: 0.05em; 
+    text-transform: uppercase;
+}
+/* Headers, Subsection's subsection */ 
+.midsection > div > p, .subsection > table{
+    margin-left: 25px; 
+}
+.header{
+    margin-bottom: 35px;
+}
+.header > h3{
+    border-top: 5px solid #8c8b8b;
+    border-bottom: 5px solid #8c8b8b;
+    width: 125px;
+    padding: 5px;
+    font-size: 32px; 
+    letter-spacing: 0.05em; 
+    text-transform: uppercase;
+    margin-top: 0;
+}
+.header > p, .subsection > p{
+    width: 70%; 
+}
+.caption, .slide_caption{
+    font-family: 'Hind'; 
+    letter-spacing: 0.05em; 
+    color: white;
+    text-align: center; 
+    font-size: 24px;
+    margin-top: 10px;
+    width: 490px;
+    background-color: rgba(0,0,0,0.8);  
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+#iteration, #lessons{
+    background-color: gray;
+}
+#iteration .header h3, #lessons .header h3{
+    border-color: #92ABBD;
+}
+/* Override home page style */ 
+#content{
+    padding-bottom: 0; 
+}
+
+/* -----------------------Main Project------------------- */
+.sketch{
+    width: 60%;
+}
+.screen{
+    width: 750px;
+}
+.sketch-screen{
+    width: 800px;
+}
+#cardkive #theproject img{
+    width: 90%;
+    height: auto;
+}
+#cardkive #theproject{
+    background-color: black;
+}
+#infographic .caption{
+    font-size: 15px;
+}
+.caption{
+    width: 275px;
+    bottom: -50px;
+}
+#infographic figure {
+    display: inline-block;
+}
+#infographic .graphic{
+    width: 275px;
+}
+#cardkive .midsection > img{
+    /*margin-bottom: 25px;*/
+}
+.img-drafts > .graphic:not(:last-child){
+    margin-right: 25px;
+}
+ 
+.img-drafts:first-child{
+    margin-left: 25px;
+}
+.has-caption{
+    margin-bottom: 75px;
+}
+.twophoto{
+    display: inline-block; 
+    margin: 0;  
+}
+#fullscreen > img{
+    width: 600px;
+}
+#fullscreen > .caption{
+    width: 600px;
+}
+#fullscreen + .twophoto img{
+    width: 550px;
+}
+
+.twophoto .caption{
+    width: 550px; 
+    font-size: 14px;
+}
+.twophoto:first-child{
+    margin-right: 10px;
+}
+#cardkive #final{
+    background-color: gray; 
+}
+#cardkive #lessons{
+    background-color: #92ABBD;
+}
+#cardkive #final .header h3{
+    border-color: #92ABBD;
+}
+#cardkive #lessons .header h3{
+    border-color: white;
+}
+
+#cardkive .midsection{
+    width: 1000px;
+}
+
+
+/* -----------------------Second Project------------------- */
+#process .midsection{
+    width: 1175px; /* Applies to Process */ 
+}
+#iteration .midsection{
+    width: 1000px;
+}
+#theproject{
+    background-color: white;
+}
+#theproject > img{
+    height: 80%;
+    width: auto;
+}
+#storyboard img{
+    width: 550px;
+}
+.card{
+    border-radius: 2px;
+    background-color: black;
+    display: inline-block;
+    width: 370px;
+    vertical-align: top;
+    margin-right: 15px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+.card img{
+    width: 350px;
+    height: 275px;
+    object-fit: cover;
+    display: block;
+    margin: auto; 
+}
+.card > h2, .card > p{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#ABtesting figure > img{
+    width: 490px;
+}
+#ABtesting figure{
+    display: inline-block;  
+    margin: 0; 
+}
+#ABtesting figure:first-child{
+    margin-right: 10px; 
+}
+.lazy img{
+    height: 625px;
+    margin: auto;
+    object-fit: cover;
+}
+.lazy{
+    width: 500px;
+}
+#prototypes > div{
+    display: inline-block;
+}
+#storeprototype{
+    margin-right: 150px;
+}
+#heuristic > ul{
+    width: 85%; 
+}
+/* Removes border to right of table */ 
+#abtestresults tr > td:last-child{
+    border-right: none;   
+}
+/* Removes border at bottom of table */ 
+#abtestresults tr:last-child > td{
+    border-bottom: none;
+}
+#abtestresults tr > td:first-child{
+    text-align: left; 
+    background-color: #92ABBD; 
+    color: black;
+    border: none;
+    font-weight: bold; 
+}
+#abtestresults th, #abtestresults td{
+    background-color: black;
+    font-size: 24px;
+    padding: 5px 10px;
+    text-align: center; 
+    color: white;
+    width: 1%;
+    font-family: 'Hind';
+}
+#abtestresults thead > tr > th:first-child{
+    background-color: gray;
+}
+#abtestresults td{
+    border-bottom:1px solid #4C4C4C;
+    border-right:1px solid #4C4C4C;
+}
+#abtestresults th{
+    background-color: #92ABBD; 
+    color: black;
+}
+.slide_caption {
+    left: 16px;
+    width: 468px;
+}
+#itemprototype .slide_caption{
+    width: 354px;
+    left: 73px;
+}
+.lazy > div img, figure{
+    position: relative;
+}

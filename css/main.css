@@ -1,0 +1,252 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+   /* ---------------------- Fonts Styles ---------------------- */ 
+
+    @font-face{
+        font-family: 'Hind'; 
+        src: url('hind/Hind-Regular.ttf') format('truetype');
+        font-weight: normal;
+    }
+    @font-face{
+        font-family: 'Hind'; 
+        src: url('hind/Hind-Bold.ttf') format('truetype');
+        font-weight: bold;
+    }
+    @font-face{
+        font-family: 'Hind'; 
+        src: url('hind/Hind-Light.ttf') format('truetype');
+        font-weight: lighter;
+    }
+    @font-face{
+        font-family: 'Montserrat';
+        src: url('montserrat/Montserrat-Regular.ttf') format('truetype'); 
+        font-weight: normal; 
+    }
+    @font-face{
+        font-family: 'Montserrat';
+        src: url('montserrat/Montserrat-Bold.ttf') format('truetype'); 
+        font-weight: bold; 
+    }
+    p, li{
+        font-family: 'Hind';
+    }
+    .title, .navbar li, .overlaytext h3, .footer h2{
+        font-family: 'Montserrat', sans-serif;
+    }
+    .name, .title, .navbar a, .footer h2, .overlaytext h3{
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+    p, a, h4, h3, h2, h1, li{
+        color: white;
+    }
+    .title{
+        text-align: center;
+        font-size: 42px;
+        letter-spacing: 0.2em;
+    }
+    .name{
+        font-size: 52px; 
+        font-family: 'Muli', sans-serif;
+        /*font-family: 'Montserrat', sans-serif;
+        font-weight: normal;*/
+    }
+    #content{
+        padding-bottom: 75px; 
+        background-color: #92ABBD; 
+        clear: both;
+    }
+
+
+    /* ---------------------- Colunns ---------------------- */ 
+    .left, .right{
+        width: 50%;
+        text-align: center;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .left{
+        float: left;
+        position: relative;
+    }
+    .left p{
+        width: 60%;
+        margin: auto;
+        font-size: 18px;
+    }
+    .right{
+        float: right;
+        background-color: gray; 
+    }
+
+    /* ---------------------- Home page navigation menu ---------------------- */ 
+    .navbar{
+        left: 0;
+        right: 0;
+        z-index: 5; 
+        opacity: 1;
+        display: none;
+    }
+    .onpage{
+        position: absolute; 
+        bottom: 0;
+    }
+    .navbar ul{
+        background-color: #EF4836;
+        margin: 0;
+    }
+    .navbar li{
+        display: inline-block;
+        line-height: 2.5em;
+        font-size: 24px;
+    }
+    .navbar ul::last-child{
+        margin-right: 0;
+    }
+    .navbar a{
+        text-decoration: none;
+        margin-right: 75px;
+    }
+    .navbar a:hover{
+        color: black;
+    }
+    .icon{
+        width: 50px;
+        height: 50px;
+    }
+    .navbar img{
+        margin-right: 75px;
+    }
+    #hiddennav img{
+        padding-left: 100px;
+    }
+    #mobilenav ul{
+        padding: 0;
+    }
+    #mobilenav ul li{
+        padding-left: 10px;
+    }
+    #mobilenav #menuicon{
+        float: right;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+    #mobilenav #menuicon button {
+        background-image: url('../img/hamburger.png');
+        border: none; 
+        background-color: #EF4836;
+    }
+    #mobilelinks li{
+        display: block;
+    }
+    #mobilelinks{
+        display: none;
+        background-color: #C0392B;
+    }
+
+    /* ---------------------- Footer ---------------------- */
+    .footer{
+        background-color: gray;
+        padding: 3% 10%;
+    }
+    .footer > h2, .contact > h2, .contact > p, .contact > img{
+        display: inline;
+    }
+    .contact{
+        float: right;
+        display: inline-block;
+    }
+    .footer p{
+        font-size: 24px;
+        margin: 0 25px;
+    }
+    .footer img{
+        margin-right: 15px;
+    }
+
+    .rightcontent{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+/* ==========================================================================
+   Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+   
+    @media screen and (max-width: 1550px){
+        .left, .right{
+            width: 100%; 
+        }
+    }
+    @media screen and (max-width: 915px){
+        .contact > p{
+            margin-left: 0;
+        }
+        .footer{
+            padding: 3.5% 5%;
+        }
+        .footer > h2{
+            margin-right: 10px; 
+        }
+    }
+    @media screen and (max-width: 880px){
+        .navbar img, #hiddennav img{
+            padding-left: 0;
+        }
+    }
+    @media screen and (max-width: 775px){
+        .contact{
+            float: none;
+            margin: 0 auto;
+            display: block;
+            width: 350px;
+        }
+        .navbar img{
+            margin-left: 0;
+        }
+        .onpage, #hiddennav{
+            display: none; 
+        }
+    }
+    @media screen and (max-width: 450px){
+        .contact{
+            width: 310px;
+        }
+        .contact img{
+            height: 40px;
+            width: 40px;
+        }
+    }

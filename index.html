@@ -1,0 +1,131 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Christine Lao - Home</title>
+        <meta name="description" content="Hi, my name is Christine Lao. I'm an aspirign front-end developer and UX/UI designer.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="Dog Rear.png">
+
+        <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/home.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="navbar" id="hiddennav">
+            <ul> 
+                <li><img src="img/Dog%20Rear.png" alt="" class="icon"> </li>
+                <li><a href="#"> Home </a></li> 
+                    <li><a href="index.html#projects"> Projects </a></li> 
+                    <li><a href="Resume/resume.html"> Resume </a></li>
+            </ul> 
+        </div> 
+        <div class="navbar" id="mobilenav">
+            <ul> 
+                <li><img src="img/Dog%20Rear.png" alt="" class="icon"> </li>
+                <li id="menuicon"><button class="icon">&nbsp;</button></li>
+                <ul id="mobilelinks"> 
+                    <li><a href="#"> Home </a></li> 
+                    <li><a href="index.html#projects"> Projects </a></li> 
+                    <li><a href="Resume/resume.html"> Resume </a></li>
+                </ul>
+            </ul> 
+        </div> 
+        <div class="left home">
+            <img src="img/Dog.png" id="graphic">
+            <h1 class="name"> Christine Lao </h1>
+            <p> Curious, hard-working student striving to become a front-end developer and UX/UI designer. <br>I combine technology and design to create something both beautiful and user-friendly. </p>
+            <div class="navbar onpage">
+                <ul> 
+                    <li><img src="img/Dog%20Rear.png" class="icon"></li>
+                    <li><a href="#"> Home </a></li> 
+                    <li><a href="#content"> Projects </a></li> 
+                    <li><a href="Resume/resume.html"> Resume </a></li> 
+                </ul> 
+            </div> 
+        </div>
+        <div class="right">
+            <div class="rightcontent">
+                <h2 class="title"> - About - </h2>
+                <p> Hi, my name is Christine and I'm currently a forth year computer engineering student at UCSD. I'm graduating this June (2016), and I'm looking for either an internship or a full-time position. </p> 
+                <p> You can contact me at: </a> 
+                <p> E-mail: clao@ucsd.edu</p> 
+                <p> Or view my LinkedIn Profile: </p> 
+                <a href="https://www.linkedin.com/in/christinelao3o"><img src="img/linkedin.png" alt=""></a> 
+                <p style="font-size: 22px;"> This website is still under construction. Please bear with me as I finish it up. Let me know if you notice any issues. Thanks for your patience! </p> 
+            </div> 
+        </div>
+
+        <div id="content">
+            <h2 class="title">- Projects -</h2> 
+            <div id="imagegrid">
+                <div class="project" id="mainproj">
+                    <img src="img/CardKive/CardKiveSquare.png">
+                    <a href="mainproject.html"> 
+                        <div class="overlay"> 
+                            <div class="overlaytext"> 
+                                <h3> CardKive </h3>
+                                <p> Website, Graphic Design </p>
+                            </div> 
+                        </div> 
+                    </a>
+                </div> 
+                <div class="project" id="secondproj" style="vertical-align: top;"> 
+                    <img src="img/Salehound/salehound.png">
+                    <a href="secondproject.html"> 
+                    <div class="overlay">
+                        <div class="overlaytext"> 
+                            <h3> Salehound </h3>
+                            <p> Web Application, User Research </p>
+                        </div>
+                    </div> 
+                    </a>
+                </div> 
+                <div class="project thirdproj"> 
+                    <img src="http://placehold.it/450x450">
+                    <a href="thirdproject.html"> 
+                    <div class="overlay" style="width: 278px; height: 276px; z-index: 1; left: -595px; top: 10px;"> 
+                        <div class="overlaytext smallertext"> 
+                            <h3> Coming Soon </h3>
+                            <p> </p>
+                        </div> 
+                    </div> 
+                    </a>
+                </div> 
+                <div class="project thirdproj" id="fourthproj"> 
+                    <img src="http://placehold.it/450x450" >
+                    <a href="forthproject.html"> 
+                    <div class="overlay" style="width: 278px; height: 276px; z-index: 1; left: -297px; top: 10px;"> 
+                        <div class="overlaytext smallertext"> 
+                            <h3> Coming Soon</h3>
+                            <p>  </p>
+                        </div> 
+                    </div> 
+                    </a>
+                </div> 
+            </div> 
+        </div>
+
+        <footer class="footer">
+            <h2> Christine Lao </h2>
+            <div class="contact"> 
+                <h2> Contact Me </h2>
+                <p> clao@ucsd.edu </p> 
+                <a href="https://www.linkedin.com/in/christinelao3o" target="_blank"><img src="img/linkedin.png" class="icon"></a>
+                <a href="https://github.com/chlao" target="_blank"><img src="img/GitHub.png" class="icon"></a>
+            </div> 
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/home.js"></script>
+    </body>
+</html>

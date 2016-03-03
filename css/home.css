@@ -1,0 +1,163 @@
+.left{
+    background:linear-gradient(
+        rgba(0, 0, 0, 0.45), 
+        rgba(0, 0, 0, 0.45)
+    ), url('../img/DSC09683.jpg');
+    background-size:cover;
+    background-position: 100% 150%;
+}
+
+#graphic{
+    width: 400px;
+    padding-top: 5%;
+}
+
+/* ---------------------- Home page Projects  ---------------------- */
+#content{
+    padding: 75px 0; 
+    background-color: #92ABBD; 
+    clear: both;
+}
+#imagegrid{
+    margin: 0 auto;
+    margin-bottom: 150px;
+    margin-top: 100px;
+    padding-left: 5%; 
+    width: 1325px; 
+}
+.project{
+    display: inline-block;
+    position: relative;
+}
+.overlay{
+    background-color: #232223; 
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    top: 0; 
+    left: 0;
+    opacity: 0; 
+    transition: all .5s;
+}
+#imagegrid img:hover .overlay, .overlay:hover{
+    opacity: .85; 
+}
+#imagegrid img:hover .overlaytext, .overlay:hover .overlaytext{
+    opacity: 1; 
+    top: 0; 
+}
+.overlaytext{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    opacity: 0;
+    padding-left: 30px; 
+    line-height: .4em;
+    transition: all .5s;
+}
+.overlaytext h3{
+    font-size: 48px;
+    letter-spacing: 0.05em;
+    font-weight: normal;
+}
+.overlaytext p{
+    font-size: 28px;
+    font-weight: lighter;
+    line-height: 1.1em;
+}
+.smallertext h3{
+    font-size: 28px;
+}
+.smallertext p{
+    font-size: 18px;
+}
+.project img{
+    border: 10px solid black;
+    width: 580px;
+    height: 580px;
+    object-fit: cover;
+}
+#secondproj img{
+    height: 280px;
+    object-position: 0 0; 
+}
+.thirdproj img{
+    position: absolute; 
+    left: -605px;
+    width: 278px;
+    height: 276px;
+}
+#fourthproj img{
+    left: -307px;
+}
+
+/* ==========================================================================
+   Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+    @media screen and (max-width: 1550px){
+        #secondproj{
+            display: block;
+        }
+        #secondproj .overlay{
+            width: 590px;
+        }
+        .project{
+            margin-bottom: 10px;
+        }
+        .thirdproj img{
+            position: static;
+        }
+        #imagegrid{
+            width: 650px;
+        }
+    }
+    @media screen and (max-width: 750px){
+        #graphic{
+            padding-top: 15%;
+        }
+    }
+    @media screen and (max-width: 650px){
+        #graphic{
+            width: 300px;
+        }
+        #imagegrid{
+            width: 445px;
+        }
+        #imagegrid .project img{
+            width: 400px;
+            height: 300px;
+        }
+        #imagegrid .overlay{
+            width: 410px;
+            height: 310px;
+         }
+        .project{
+            display: block;
+        }
+    }
+    @media screen and (max-width: 450px){
+        #imagegrid{
+            width: 300px;
+            padding-left: 0;
+        }
+        
+        #imagegrid .project img{
+            width: 278px;
+            height: 276px;
+        }
+        #imagegrid .overlay{
+            width: 288px;
+            height: 286px;
+         }
+        .project{
+            display: block;
+        }
+    }
+    @media screen and (max-height: 560px){
+        .left{
+            height: 175vh; 
+        }
+    }
