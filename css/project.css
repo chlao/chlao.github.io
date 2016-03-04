@@ -137,7 +137,7 @@ section > img{
     text-transform: uppercase;
 }
 /* Headers, Subsection's subsection */ 
-.midsection > div > p, .subsection > table{
+.midsection > div > p, .midsection > img, .subsection > table{
     margin-left: 25px; 
 }
 .header{
@@ -187,7 +187,7 @@ section > img{
     width: 60%;
 }
 .screen{
-    width: 750px;
+    width: 700px;
 }
 .sketch-screen{
     width: 800px;
@@ -201,8 +201,6 @@ section > img{
 }
 #infographic .caption{
     font-size: 15px;
-}
-#cardkive .caption{
     width: 275px;
     bottom: -50px;
 }
@@ -232,7 +230,7 @@ section > img{
 #fullscreen > img{
     width: 600px;
 }
-#fullscreen > .caption{
+##fullscreen > .caption{
     width: 600px;
 }
 #fullscreen + .twophoto img{
@@ -262,7 +260,17 @@ section > img{
 #cardkive .midsection{
     width: 1000px;
 }
-
+#loginsignup #draft1 > img{
+    width: 585px;
+    height: 418px;
+    display: inline-block;
+}
+#manage img{
+    width: 300px;
+}
+#final > p > a{
+    font-size: 22px;
+}
 
 /* -----------------------Second Project------------------- */
 #process .midsection{
