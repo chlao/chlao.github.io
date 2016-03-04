@@ -15,7 +15,6 @@
     align-self: center;
 }
 .helper{
-	display: inline-block;
     height: 100%;
     vertical-align: middle;
 }
@@ -137,7 +136,7 @@ section > img{
     text-transform: uppercase;
 }
 /* Headers, Subsection's subsection */ 
-.midsection > div > p, .midsection > img, .subsection > table{
+.subsection > *:not(h4):not(ul), .subsection > table{
     margin-left: 25px; 
 }
 .header{
@@ -181,16 +180,19 @@ section > img{
 #content{
     padding-bottom: 0; 
 }
+figure{
+    margin: 0;  
+}
+.inline-img{
+    display: inline-block;
+}
 
 /* -----------------------Main Project------------------- */
 .sketch{
     width: 60%;
 }
-.screen{
-    width: 700px;
-}
-.sketch-screen{
-    width: 800px;
+.finaldesign img{
+    width: 75%; 
 }
 #cardkive #theproject img{
     width: 90%;
@@ -201,49 +203,33 @@ section > img{
 }
 #infographic .caption{
     font-size: 15px;
-    width: 275px;
     bottom: -50px;
 }
-#infographic figure {
-    display: inline-block;
-}
-#infographic .graphic{
+#infographic .graphic, #infographic .caption{
     width: 275px;
-}
-#cardkive .midsection > img{
-    /*margin-bottom: 25px;*/
 }
 .img-drafts > .graphic:not(:last-child){
     margin-right: 25px;
 }
- 
 .img-drafts:first-child{
     margin-left: 25px;
 }
-.has-caption{
-    margin-bottom: 75px;
+#fullimage > img, #fullimage > .caption{
+    width: 560px;
 }
-.twophoto{
-    display: inline-block; 
-    margin: 0;  
+#fullimage > img{
+    width: 560px;
+    height: 350px;
 }
-#fullscreen > img{
-    width: 600px;
-}
-##fullscreen > .caption{
-    width: 600px;
-}
-#fullscreen + .twophoto img{
+#upload #fullimage + .twophoto img, #upload .twophoto .caption{
     width: 550px;
-}
-
-.twophoto .caption{
-    width: 550px; 
     font-size: 14px;
 }
+/*
 .twophoto:first-child{
     margin-right: 10px;
 }
+*/
 #cardkive #final{
     background-color: gray; 
 }
@@ -256,16 +242,14 @@ section > img{
 #cardkive #lessons .header h3{
     border-color: white;
 }
-
 #cardkive .midsection{
     width: 1000px;
 }
 #loginsignup #draft1 > img{
-    width: 585px;
+    width: 560px;
     height: 418px;
-    display: inline-block;
 }
-#manage img{
+.threephoto, .threephoto + figcaption{
     width: 300px;
 }
 #final > p > a{
@@ -314,10 +298,6 @@ section > img{
 #ABtesting figure > img{
     width: 490px;
 }
-#ABtesting figure{
-    display: inline-block;  
-    margin: 0; 
-}
 #ABtesting figure:first-child{
     margin-right: 10px; 
 }
@@ -328,9 +308,6 @@ section > img{
 }
 .lazy{
     width: 500px;
-}
-#prototypes > div{
-    display: inline-block;
 }
 #storeprototype{
     margin-right: 150px;
