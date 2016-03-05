@@ -1,5 +1,4 @@
 .left{
-    background-color: black;
     text-align: center;
 }
 .right h2, .right p{
@@ -24,21 +23,12 @@
 #moreprojects .title{
 	color: black;
 }
-
 .project img{
 	width: 300px;
 	height: 300px;
 }
 #content section > h2{
     padding-top: 75px;
-}
-.project{
-    display: inline-block;
-    position: relative;
-    margin-right: 15px;
-}
-#moreprojects::last-child{
-	margin-right: 0;
 }
 .overlay{
     background-color: #232223; 
@@ -76,15 +66,10 @@
     font-weight: lighter;
     line-height: 1.1em;
 }
-.project img{
-    border: 10px solid black;
-    object-fit: cover;
-}
 #secondproj img{
     object-position: 0 0; 
 }
 #imagegrid{
-	margin: 0 auto;
 	width: 1020px;
 }
 #moreprojects{
@@ -100,29 +85,19 @@
     letter-spacing: 0.05em;
 }
 .midsection{
-    margin-right: auto; 
-    margin-left: auto; 
+    margin: 0 auto;
     margin-bottom: 100px;   
 }
-.midsection > p, .header > p, section > p{
+.midsection > p, section > p, .header > p{
     width: 60%; 
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 /* Section subtitle */ 
 section{
     padding-bottom: 50px;
 }
-section > p{
-    text-align: center;
-    margin: 0 auto;
+#content > section > p{
     margin-bottom: 50px;
-}
-section > img{
-    margin: 0 auto;
-    display: block;
-}
-.midsection > div:not(#storyboard > div > div){
-    margin-top: 75px;
 }
 .subsection{
     margin: 70px auto; 
@@ -132,12 +107,9 @@ section > img{
     letter-spacing: 0.05em; 
     text-transform: uppercase;
 }
-/* Headers, Subsection's subsection */ 
+/* Headers, Subsection's subsection (indent)*/ 
 .subsection > *:not(h4):not(ul), .subsection > table{
     margin-left: 25px; 
-}
-.header{
-    margin-bottom: 35px;
 }
 .header > h3{
     border-top: 5px solid #8c8b8b;
@@ -167,12 +139,6 @@ section > img{
     bottom: 0;
     z-index: 2;
 }
-#iteration, #lessons{
-    background-color: gray;
-}
-#iteration .header h3, #lessons .header h3{
-    border-color: #92ABBD;
-}
 /* Override home page style */ 
 #content{
     padding-bottom: 0; 
@@ -180,8 +146,26 @@ section > img{
 figure{
     margin: 0;  
 }
-.inline-img{
-    display: inline-block;
+.center, section > p, .card img{ 
+    margin: 0 auto; 
+    display: block;
+    text-align: center; 
+}
+.smmarginr{
+    margin-right: 15px;
+}
+.reverse, #abtestresults thead > tr > th:first-child{
+    background-color: gray; 
+}
+.reverse .header > h3, #abtestresults th{
+    border-color: #92ABBD;   
+}
+/* Black background */ 
+.bgblack, .card, #abtestresults th, #abtestresults td{
+    background-color: black;
+}
+.lazy > div img, figure, .project{
+    position: relative;
 }
 
 /* -----------------------Main Project------------------- */
@@ -191,12 +175,9 @@ figure{
 .finaldesign img{
     width: 75%; 
 }
-#cardkive #theproject img{
+#cardkive .left > img{
     width: 90%;
     height: auto;
-}
-#cardkive #theproject{
-    background-color: black;
 }
 #infographic .caption{
     font-size: 15px;
@@ -205,39 +186,15 @@ figure{
 #infographic .graphic, #infographic .caption{
     width: 275px;
 }
-.img-drafts > .graphic:not(:last-child){
-    margin-right: 25px;
-}
-.img-drafts:first-child{
-    margin-left: 25px;
-}
 #fullimage > img, #fullimage > .caption{
     width: 560px;
 }
 #fullimage > img{
-    width: 560px;
     height: 350px;
 }
 #upload #fullimage + .twophoto img, #upload .twophoto .caption{
     width: 550px;
     font-size: 14px;
-}
-/*
-.twophoto:first-child{
-    margin-right: 10px;
-}
-*/
-#cardkive #final{
-    background-color: gray; 
-}
-#cardkive #lessons{
-    background-color: #92ABBD;
-}
-#cardkive #final .header h3{
-    border-color: #92ABBD;
-}
-#cardkive #lessons .header h3{
-    border-color: white;
 }
 #cardkive .midsection{
     width: 1000px;
@@ -272,36 +229,24 @@ figure{
 }
 .card{
     border-radius: 2px;
-    background-color: black;
-    display: inline-block;
     width: 370px;
     vertical-align: top;
-    margin-right: 15px;
     padding-top: 10px;
     margin-bottom: 20px;
 }
 .card img{
     width: 350px;
     height: 275px;
-    object-fit: cover;
-    display: block;
-    margin: auto; 
 }
 .card > h2, .card > p{
-    margin-right: 15px;
     margin-left: 15px;
 }
-
 #ABtesting figure > img{
     width: 490px;
-}
-#ABtesting figure:first-child{
-    margin-right: 10px; 
 }
 .lazy img{
     height: 625px;
     margin: auto;
-    object-fit: cover;
 }
 .lazy{
     width: 500px;
@@ -328,16 +273,12 @@ figure{
     font-weight: bold; 
 }
 #abtestresults th, #abtestresults td{
-    background-color: black;
     font-size: 24px;
     padding: 5px 10px;
     text-align: center; 
     color: white;
     width: 1%;
     font-family: 'Hind';
-}
-#abtestresults thead > tr > th:first-child{
-    background-color: gray;
 }
 #abtestresults td{
     border-bottom:1px solid #4C4C4C;
@@ -354,7 +295,4 @@ figure{
 #itemprototype .slide_caption{
     width: 354px;
     left: 73px;
-}
-.lazy > div img, figure{
-    position: relative;
 }

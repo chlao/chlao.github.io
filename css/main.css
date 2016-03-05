@@ -87,7 +87,16 @@ video {
         background-color: #92ABBD; 
         clear: both;
     }
-
+    img{
+        object-fit: cover;
+    }
+    /* Applied to figures, images wrapped around divs, etc. */ 
+    .inline-img{
+    display: inline-block;
+    }
+    .project img{
+        border: 10px solid black;
+    }
 
     /* ---------------------- Colunns ---------------------- */ 
     .left, .right{

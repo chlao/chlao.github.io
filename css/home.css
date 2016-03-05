@@ -72,10 +72,8 @@
     font-size: 18px;
 }
 .project img{
-    border: 10px solid black;
     width: 580px;
     height: 580px;
-    object-fit: cover;
 }
 #secondproj img{
     height: 280px;
