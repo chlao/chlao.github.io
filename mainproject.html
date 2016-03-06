@@ -40,7 +40,6 @@
             <span class="helper inline-img"></span>
             <img src="img/CardKive/cardkivemain.png" alt=""> 
         </div> 
-        </div>
         <div class="right">
             <div class="rightcontent">
                 <h2 class="title">CardKive</h2>
@@ -68,8 +67,8 @@
                     <div class="subsection">
                         <h4> > Drafts </h4> 
                         <p> </p> 
-                        <figure class="inline-img"><img class="graphic" src="img/CardKive/infographic-draft1.png" alt=""><figcaption class="caption">A more cartoonish approach</figcaption></figure>
-                        <figure class="inline-img"><img class="graphic" src="img/CardKive/infographic-draft2.jpg" alt=""><figcaption class="caption">Abstraction of saving photos</figcaption></figure>
+                        <figure class="inline-img smmarginr"><img class="graphic" src="img/CardKive/infographic-draft1.png" alt=""><figcaption class="caption">A more cartoonish approach</figcaption></figure>
+                        <figure class="inline-img smmarginr"><img class="graphic" src="img/CardKive/infographic-draft2.jpg" alt=""><figcaption class="caption">Abstraction of saving photos</figcaption></figure>
                         <figure class="inline-img"><img class="graphic" src="img/CardKive/infographic-draft2-1.jpg" alt=""><figcaption class="caption">Outdated view of uploading photos</figcaption></figure>
                     </div>
                     <br> 
@@ -126,13 +125,16 @@
                         <h4> Adding a Card </h4>
                         <p> We dicussed various ways for a user to add a card to their collection online. A couple of these ways include: 
                             <ul> 
-                                <li> A "card" (i.e. dashed outline) within the flow of cards that prompts you to add a card by clicking on it. This would be placed either at the end of the cards of the beginning </li> 
-                                <li> A fixed button at the lower right corner of the screen, like Google Calendar and other applicaitons by Google. The user could click on this anytime they wanted as they scrolled through the cards </li> 
+                                <li> A "card" (i.e. dashed outline) within the flow of cards that prompts you to add a card by clicking on it. This would be placed either at the end of the cards of the beginning. </li> 
+                                <li> A fixed button at the lower right corner of the screen, like Google Calendar and other applicaitons by Google. The user could click on this anytime they wanted as they scrolled through the cards. </li> 
                                 <li> A button in the header of the page </li> 
                                 <li> A menu bar for a set of operations on the website </li>
                             </ul> 
                         </p> 
-                        <!--<img src="img/CardKive/" alt="" class="threephoto"> -->
+                        <figure class="twophoto inline-img"> 
+                            <img src="img/CardKive/dashedoutline.PNG" alt="" class="threephoto">
+                            <figcaption class="caption"> Dashed Outline </figcaption> 
+                        </figure> 
                         <figure class="twophoto inline-img"> 
                             <img src="img/CardKive/GoogleCalendar.png" alt="" class="threephoto"> 
                             <figcaption class="caption"> Fixed Button <figcaption> 
@@ -181,7 +183,7 @@
             <section id="final" class="reverse"> 
                 <h2 class="title">- Final Product -</h2> 
                 <p> CardKive is for people who receive lots of cards for many different occassions, but aren't able to enjoy them. These cards end up on boxes and stored away in the attic. Storing these cards in a place on your phone that's easily accessible allows them to enjoy these cards whenever they want. It was found that the typical user for this type of application are females ages twenty to forty. </p> 
-                <p> While most of website is done, this project is still in progress, and there are aspects of the website that are likely to change. But, you can view the website as it is now at:<br><br><a href="http://www.mycardkive.com"> mycardkive.com</a></p> 
+                <p> While most of website is done, we're still add the final touches, working on responsive designs, etc. and there are aspects of the website that are likely to change. But, you can view the website as it is now at:<br><br><a href="http://www.mycardkive.com"> mycardkive.com</a></p> 
             </section> 
             <section id="lessons"> 
                 <h2 class="title">- Lessons Learned -</h2> 
@@ -232,7 +234,7 @@
             <div class="contact"> 
                 <h2> Contact Me </h2>
                 <p> clao@ucsd.edu </p> 
-                <a href="https://www.linkedin.com/in/christinelao3o" target="_blank"><img src="img/linkedin.png" class="icon"></a>
+                <a href="https://www.linkedin.com/in/christinelao3o" target="_blank"><img src="img/linkedin.png" class="icon smmarginr"></a>
                 <a href="https://github.com/chlao" target="_blank"><img src="img/GitHub.png" class="icon"></a>
             </div> 
         </footer>
@@ -240,27 +242,5 @@
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/project.js"></script>
-
-        <script>
-        /* When the user clicks on the button, 
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(e) {
-          if (!e.target.matches('.dropbtn')) {
-
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            for (var d = 0; d < dropdowns.length; d++) {
-              var openDropdown = dropdowns[d];
-              if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-              }
-            }
-          }
-        }
-        </script>
     </body>
 </html>

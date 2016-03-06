@@ -85,7 +85,7 @@ function responsivehome(){
   } 
 }; 
 
-/* Smooth scrolling */
+/* Smooth scrolling within the same page*/
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -101,6 +101,19 @@ $(function() {
   });
 });
 
+/* Smooth scrolling if coming from a different page */
+$(function(){
+  if (window.location.hash){
+    scroll(0,0); 
+
+    $('html, body').animate({
+    scrollTop: $(window.location.hash).offset().top
+    }, 2000);
+
+    return false;
+  }
+});
+
 document.body.onscroll = function(){
   var height = window.innerHeight || document.documentElement.clientHeight ||document.body.clientHeight;
   var mobile = $('#mobilenav').css('display'); 
@@ -113,3 +126,5 @@ document.body.onscroll = function(){
     $('#hiddennav').css('display', 'none');
   }
 };
+
+

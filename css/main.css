@@ -92,13 +92,16 @@ video {
     }
     /* Applied to figures, images wrapped around divs, etc. */ 
     .inline-img{
-    display: inline-block;
+        display: inline-block;
     }
     .project img{
         border: 10px solid black;
     }
+    .smmarginr{
+        margin-right: 15px;
+    }
 
-    /* ---------------------- Colunns ---------------------- */ 
+    /* ---------------------- Columns ---------------------- */ 
     .left, .right{
         width: 50%;
         text-align: center;
@@ -112,7 +115,7 @@ video {
     .left p{
         width: 60%;
         margin: auto;
-        font-size: 18px;
+        font-size: 20px;
     }
     .right{
         float: right;
@@ -199,9 +202,6 @@ video {
     .footer p{
         font-size: 24px;
         margin: 0 25px;
-    }
-    .footer img{
-        margin-right: 15px;
     }
 
     .rightcontent{
