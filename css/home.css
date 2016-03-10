@@ -11,6 +11,11 @@
     padding-top: 5%;
 }
 
+.onpage{
+    position: absolute; 
+    bottom: 0;
+}
+
 /* ---------------------- Home page Projects  ---------------------- */
 #content{
     padding: 75px 0; 

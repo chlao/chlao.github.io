@@ -129,12 +129,6 @@ video {
         z-index: 5; 
         opacity: 1;
         display: none;
-    }
-    .onpage{
-        position: absolute; 
-        bottom: 0;
-    }
-    .navbar ul{
         background-color: #EF4836;
         margin: 0;
     }
@@ -163,10 +157,10 @@ video {
     #hiddennav img{
         padding-left: 100px;
     }
-    #mobilenav ul{
+    #mobilenav{
         padding: 0;
     }
-    #mobilenav ul li{
+    #mobilenav > li{
         padding-left: 10px;
     }
     #mobilenav #menuicon{
