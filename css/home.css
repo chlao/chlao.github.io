@@ -70,6 +70,7 @@
 }
 .smallertext h3{
     font-size: 28px;
+    line-height: 1; 
 }
 .smallertext p{
     font-size: 18px;
