@@ -57,11 +57,11 @@
     font-size: 32px;
     letter-spacing: 0.05em;
     font-weight: normal;
+    line-height: 1em; 
 }
 .overlaytext p{
     font-size: 22px;
     font-weight: lighter;
-    line-height: 1.1em;
 }
 #secondproj img{
     object-position: 0 0; 
