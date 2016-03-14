@@ -67,7 +67,7 @@ video {
     .name, .title, .navbar a, .footer h2, .overlaytext h3{
         text-transform: uppercase;
         letter-spacing: 0.1em;
-        line-height: 1;
+        line-height: 1; 
     }
     p, a, h4, h3, h2, h1, li{
         color: white;
