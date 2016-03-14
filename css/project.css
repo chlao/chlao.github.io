@@ -189,6 +189,8 @@ figure{
 }
 #upload #fullimage + .twophoto img, #upload .twophoto .caption{
     width: 550px;
+}
+.smcaption{
     font-size: 14px;
 }
 #cardkive .midsection{
@@ -289,4 +291,16 @@ figure{
 #itemprototype .slide_caption{
     width: 354px;
     left: 73px;
+}
+
+/* ----------------------- Third Project------------------- */
+#content li, #content figure{
+    margin-bottom: 10px;
+}
+.undercaption{
+    top: 73px;
+    width: 453px;
+}
+#companalysis li, #compscen li{
+    width: 60%; 
 }
