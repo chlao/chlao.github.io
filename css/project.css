@@ -50,14 +50,13 @@
     left: 0;
     opacity: 0;
     padding-left: 30px; 
-    line-height: .4em;
+    line-height: 1em;
     transition: all .5s;
 }
 .overlaytext h3{
     font-size: 32px;
     letter-spacing: 0.05em;
-    font-weight: normal;
-    line-height: 1em; 
+    font-weight: normal; 
 }
 .overlaytext p{
     font-size: 22px;
