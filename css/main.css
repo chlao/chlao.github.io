@@ -109,8 +109,8 @@ video {
     .left, .right{
         width: 50%;
         text-align: center;
-        height: 100vh;
         overflow: hidden;
+        height: 100vh;
     }
     .left{
         float: left;
@@ -124,6 +124,32 @@ video {
     .right{
         float: right;
         background-color: gray; 
+    }
+    .overlay{
+        background-color: #232223; 
+        position: absolute;
+        width: 100%;
+        height: 100%; 
+        top: 0; 
+        left: 0;
+        opacity: 0; 
+        transition: all .5s;
+    }
+    .overlaytext{
+        position: absolute;
+        top: 100px;
+        left: 0;
+        opacity: 0;
+        padding-left: 30px; 
+        transition: all .5s;
+    }
+    .overlaytext h3{
+        letter-spacing: 0.05em;
+        font-weight: normal; 
+    }
+    .overlaytext p{
+        font-size: 22px;
+        font-weight: lighter;
     }
 
     /* ---------------------- Home page navigation menu ---------------------- */ 
@@ -141,7 +167,7 @@ video {
         line-height: 2.5em;
         font-size: 24px;
     }
-    .navbar ul::last-child{
+    .navbar ul:last-child{
         margin-right: 0;
     }
     .navbar a{
@@ -170,7 +196,7 @@ video {
     #mobilenav #menuicon{
         float: right;
         margin-right: 10px;
-        margin-top: 5px;
+        margin-top: 10px;
     }
     #mobilenav #menuicon button {
         background-image: url('../img/hamburger.png');
@@ -200,8 +226,8 @@ video {
     .footer p{
         font-size: 24px;
         margin: 0 25px;
+        vertical-align: bottom;
     }
-
     .rightcontent{
         width: 70%;
         margin: 0 auto;
@@ -239,7 +265,7 @@ video {
             float: none;
             margin: 0 auto;
             display: block;
-            width: 350px;
+            width: 303px;
         }
         .navbar img{
             margin-left: 0;
@@ -250,10 +276,31 @@ video {
     }
     @media screen and (max-width: 450px){
         .contact{
-            width: 310px;
+            width: 283px;
         }
         .contact img{
             height: 40px;
             width: 40px;
+        }
+        .title, .name{
+            font-size: 32px;
+        }
+        #imagegrid{
+            width: 300px;
+            padding-left: 0;
+        }
+        #imagegrid .project img{
+            width: 278px;
+            height: 276px;
+        }
+        #imagegrid .overlay{
+            width: 288px;
+            height: 286px;
+         }
+        .project{
+            display: block;
+        }
+        .right{
+            height: 110%; 
         }
     }

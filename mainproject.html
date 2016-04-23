@@ -10,8 +10,90 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/project.css">
+        <style> 
+            .sketch, .subsection > ul{
+                width: 60%;
+            }
+            .finaldesign img{
+                width: 75%; 
+            }
+            #cardkive .left > img{
+                width: 90%;
+                height: auto;
+            }
+            #infographic .caption{
+                font-size: 15px;
+                bottom: -50px;
+            }
+            #infographic .subsection figure{
+                margin-bottom: 75px;
+            }
+            #infographic .graphic, #infographic .caption{
+                width: 275px;
+            }
+            #fullimage > img, #fullimage > .caption{
+                width: 560px;
+            }
+            #fullimage > img{
+                height: 350px;
+            }
+            #upload #fullimage + .twophoto img, #upload .twophoto .caption{
+                width: 550px;
+            }
+            .smcaption{
+                font-size: 14px;
+            }
+            #loginsignup #draft1 > img{
+                width: 560px;
+                height: 418px;
+            }
+            .threephoto, .threephoto + figcaption{
+                width: 300px;
+            }
+            #final > p > a{
+                font-size: 22px;
+            }
+            @media screen and (max-width: 1200px){
+                #process .midsection{
+                    width: 800px;
+                }
+                #draft1 > img:first-of-type{ 
+                    margin-bottom: 50px;
+                }
+            }
+            @media screen and (max-width: 850px){
+                #process .midsection{
+                    width: 500px;
+                }
+                #imagegrid{
+                    width: 300px;
+                }
+                #imagegrid > .project{
+                    margin-bottom: 20px; 
+                }
+                .sketch, .finaldesign > img{
+                    width: 100%; 
+                }
+                #loginsignup #draft1 > img, #fullimage > img, #upload #fullimage + .twophoto img, #upload .twophoto .caption{
+                    width: 100%; 
+                    height: auto; 
+                }
+            }
+            @media screen and (max-width: 600px){
+                #process .midsection{
+                    width: 400px; 
+                }
+            }
+            @media screen and (max-width: 450px){
+                #process .midsection{
+                    width: 300px; 
+                }
+                .subsection > *:not(h4):not(ul), .subsection > table{
+                    margin-left: 0px; 
+                }
+            }
+        </style>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-
     </head>
     <body id="cardkive">
         <!--[if lt IE 8]>
@@ -202,7 +284,7 @@
                     </div> 
                     </a>
                 </div> 
-                <div class="project thirdproj inline-img smmarginr"> 
+                <div class="project inline-img smmarginr"> 
                     <img src="img/MobilePlaylist/MobilePlaylistMain.png">
                     <a href="thirdproject.html"> 
                     <div class="overlay"> 
@@ -213,7 +295,7 @@
                     </div> 
                     </a>
                 </div> 
-                 <div class="project thirdproj inline-img"> 
+                 <div class="project inline-img"> 
                     <img src="http://placehold.it/450x450" >
                     <a href="forthproject.html"> 
                     <div class="overlay"> 

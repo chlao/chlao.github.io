@@ -37,7 +37,7 @@
     position: absolute;
     width: 100%;
     height: 100%; 
-    top: 0; 
+    top: 0;
     left: 0;
     opacity: 0; 
     transition: all .5s;
@@ -50,22 +50,13 @@
     top: 0; 
 }
 .overlaytext{
-    position: absolute;
-    top: 100px;
-    left: 0;
-    opacity: 0;
-    padding-left: 30px; 
     line-height: .4em;
-    transition: all .5s;
 }
 .overlaytext h3{
     font-size: 48px;
-    letter-spacing: 0.05em;
-    font-weight: normal;
 }
 .overlaytext p{
     font-size: 28px;
-    font-weight: lighter;
     line-height: 1.1em;
 }
 .smallertext h3{
@@ -115,10 +106,21 @@
         #imagegrid{
             width: 650px;
         }
+        .right .title{
+            padding-top: 5%;
+        }
+    }
+    @media screen and (max-width: 1200px){
+        .right{
+            height: 90vh; 
+        }
     }
     @media screen and (max-width: 750px){
         #graphic{
             padding-top: 15%;
+        }
+        .right{
+            height: 100vh; 
         }
     }
     @media screen and (max-width: 650px){
@@ -135,24 +137,6 @@
         #imagegrid .overlay{
             width: 410px;
             height: 310px;
-         }
-        .project{
-            display: block;
-        }
-    }
-    @media screen and (max-width: 450px){
-        #imagegrid{
-            width: 300px;
-            padding-left: 0;
-        }
-        
-        #imagegrid .project img{
-            width: 278px;
-            height: 276px;
-        }
-        #imagegrid .overlay{
-            width: 288px;
-            height: 286px;
          }
         .project{
             display: block;

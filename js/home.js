@@ -36,8 +36,8 @@ function responsivehome(){
 
   if (mq775.matches){
     matched = true; 
-    // Remove Name 
-    document.querySelectorAll('.footer > h2')[0].innerHTML = ''; 
+    // Remove name 
+    $('.footer > h2').css('display', 'none'); 
 
     // Hide navigation menus
     $('.navbar').css('display', 'none');
@@ -50,7 +50,7 @@ function responsivehome(){
     });
   }
   else{
-    document.querySelectorAll('.footer > h2')[0].innerHTML = 'Christine Lao'; 
+    $('.footer > h2').css('display', 'inline-block'); 
     $('.navbar').css('display', 'none');
     $('.onpage').css('display', 'block');
   }
