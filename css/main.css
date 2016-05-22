@@ -214,14 +214,13 @@ video {
     /* ---------------------- Footer ---------------------- */
     .footer{
         background-color: gray;
-        padding: 50px 10%;
+        padding: 30px 10%;
     }
-    .footer > h2, .contact > h2, .contact > p, .contact > img{
+    .footer *{
         display: inline-block;
     }
     .contact{
         float: right;
-        display: inline-block;
     }
     .contact p{
         color: white;
