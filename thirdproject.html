@@ -10,6 +10,30 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/project.css">
+
+        <style> 
+            .threephoto, .caption, .slide_caption{
+                width: 320px; 
+                font-size: 14px; 
+            }
+
+            #content li, #content figure{
+                margin-bottom: 10px;
+            }
+            .undercaption{
+                top: 73px;
+                width: 453px;
+            }
+            #companalysis li, #compscen li{
+                width: 60%; 
+            }
+            @media(max-width: 450px){
+                .rightcontent{
+                    width: 70%; 
+                }
+            }
+        </style> 
+
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body> 
@@ -124,8 +148,8 @@
                             <figcaption class="caption smcaption"> Spotify's Search Results </figcaption> 
                         </figure>
                         <li> While interviewing people and comparing music applications, we discovered that there were two main ways that people created playlists. The first people to create a playlist from the (...) menu on a song in their search results, or creating a playlist and then adding songs from the playlist itself when this feature was supported. We decided to implement both since users used either of these methods. In music applications that did not support this functionality, we found users often searched for songs that they already had in their library after creating a blank playlist, so we wanted to make the route more direct and easier for users to be able to create playlists from existing music in their library.</li> 
-                        <img src="img/MobilePlaylist/AddtoPlaylist.PNG" alt="" class="smmarginr"> 
-                        <img src="img/MobilePlaylist/AddtoPlaylistOverlay.PNG" alt="">  
+                        <img src="img/MobilePlaylist/AddtoPlaylist.PNG" alt="" class="smmarginr threephoto"> 
+                        <img src="img/MobilePlaylist/AddtoPlaylistOverlay.PNG" alt="" class="threephoto">  
                     </ul>  
                 </div> 
                 <div class="midsection" id="companalysis">

@@ -147,14 +147,9 @@ img{
 	left: 0;
 	top: 0;
 }
-.spacer
-{
+.spacer{
     width: 100%;
     height: 60px;
-}
-
-.contact *{
-	vertical-align: middle; 
 }
 
 /* ==========================================================================
