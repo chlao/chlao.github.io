@@ -231,8 +231,8 @@ video {
         font-size: 1.5em;
         margin: 0 25px;
     }
-    .contact *{
-        vertical-align: bottom;
+    .contact > h2, .contact > p{
+        vertical-align: middle;
     }
     .rightcontent{
         width: 70%;

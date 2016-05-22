@@ -152,6 +152,10 @@ img{
     height: 60px;
 }
 
+#contact p{
+	text-align: right; 
+}
+
 /* ==========================================================================
    Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
