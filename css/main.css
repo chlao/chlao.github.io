@@ -68,7 +68,7 @@ video {
         text-transform: uppercase;
         letter-spacing: 0.1em;
     }
-    p, a, h4, h3, h2, h1, li{
+    p, a, h4, h3, h2, h1, li, q{
         color: white;
     }
     .title{
