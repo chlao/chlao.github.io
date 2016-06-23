@@ -1,18 +1,6 @@
 img, figure, .overlay{
     display: inline-block;
 }
-.right h2, .right p{
-	margin-left: auto;
-	margin-right: auto;
-}
-.right{
-    display: flex;
-    justify-content: center;
-}
-.rightcontent{
-    width: 60%;
-    align-self: center;
-}
 .helper{
     height: 100%;
     vertical-align: middle;

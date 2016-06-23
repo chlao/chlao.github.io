@@ -124,6 +124,12 @@ video {
     .right{
         float: right;
         background-color: gray; 
+        display: flex;
+        justify-content: center;
+    }
+    .rightcontent{
+        width: 60%;
+        align-self: center;
     }
     .overlay{
         background-color: #232223; 
