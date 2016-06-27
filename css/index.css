@@ -13,10 +13,6 @@ figure {
   height: 50px;
   width: 50px; }
 
-/* Applied to figures, images wrapped around divs, etc. */
-.inline-img {
-  display: inline-block; }
-
 .smmarginr {
   margin-right: 15px; }
 
@@ -276,6 +272,7 @@ footer {
    Navigation Menu
    ========================================================================== */
 #navbar--onpage {
+  display: block;
   position: absolute;
   bottom: 0; }
 
@@ -295,10 +292,12 @@ footer {
     .content #content__projectmenu .primaryproj .project__img {
       width: 580px;
       height: 580px; }
-    .content #content__projectmenu .secondaryproj .project__img {
-      width: 580px;
-      height: 280px;
-      object-position: 0 0; }
+    .content #content__projectmenu .secondaryproj {
+      vertical-align: top; }
+      .content #content__projectmenu .secondaryproj .project__img {
+        width: 580px;
+        height: 280px;
+        object-position: 0 0; }
     .content #content__projectmenu .tertiaryproj .project__img {
       position: absolute;
       left: -605px;

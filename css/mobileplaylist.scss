@@ -13,15 +13,13 @@ figcaption{
 	margin: 16px 40px; 
 }
 
-
-@media screen and (max-width: 1200px){
-	figure{
-		width: 90%; 
-
-		*{
-			width: 90%;
+@media screen and (max-width: 1650px){
+	#midsection__compscenarios{
+		figure{
+			margin-bottom: 50px; 
 		}
 	}
+	
 }
 
 @media screen and (max-width: 500px){

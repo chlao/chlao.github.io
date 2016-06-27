@@ -38,6 +38,7 @@
    ========================================================================== */
 
 	#navbar--onpage{
+		display: block;
 	    position: absolute;
 	    bottom: 0;
 	}
@@ -66,11 +67,15 @@
     			height: $projectimg-length;
 		    }
 
-		    .secondaryproj .project__img{
-		    	width: $projectimg-length;
-		    	height: 280px;
-    			object-position: 0 0; 
-		    }
+		    .secondaryproj{
+		    	vertical-align: top; 
+
+		    	.project__img{
+			    	width: $projectimg-length;
+			    	height: 280px;
+	    			object-position: 0 0; 
+			    }
+			}
 
 		    .tertiaryproj .project__img{
 		    	position: absolute; 

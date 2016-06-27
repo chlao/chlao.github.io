@@ -123,6 +123,10 @@ $color-blue: #92ABBD;
 			}
 		}
 
+		.twophoto:first-of-type{
+			margin-right: 10px; 
+		}
+
 		.threephoto{
 			display: inline-block;
 			width: 300px; 
@@ -242,8 +246,12 @@ $color-blue: #92ABBD;
 	    	.twophoto, .twophoto *{
 	    		width: 100%; 
 	    	}    
-	    	.threephoto, .threephoto *{
-	    		width: 70%; 
+	    	.threephoto{
+	    		width: 90%; 
+
+	    		*{
+	    			width: 70%;
+	    		} 
 	    	}
 	    }
 

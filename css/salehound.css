@@ -13,10 +13,6 @@ figure {
   height: 50px;
   width: 50px; }
 
-/* Applied to figures, images wrapped around divs, etc. */
-.inline-img {
-  display: inline-block; }
-
 .smmarginr {
   margin-right: 15px; }
 
@@ -332,6 +328,8 @@ figcaption, .slide_caption {
     width: 550px; }
     .content .twophoto * {
       width: 550px; }
+  .content .twophoto:first-of-type {
+    margin-right: 10px; }
   .content .threephoto {
     display: inline-block;
     width: 300px; }
@@ -406,8 +404,10 @@ figcaption, .slide_caption {
     width: 90%; }
   .content .twophoto, .content .twophoto * {
     width: 100%; }
-  .content .threephoto, .content .threephoto * {
-    width: 70%; }
+  .content .threephoto {
+    width: 90%; }
+    .content .threephoto * {
+      width: 70%; }
 
   .browseprojects #content__projectmenu {
     width: 320px; } }

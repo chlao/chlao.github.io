@@ -10,12 +10,6 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/mobileplaylist.css">
 
-        <style> 
-            #companalysis li, #compscen li{
-                width: 60%; 
-            }
-        </style> 
-
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body> 
@@ -90,12 +84,12 @@
                         <p class="subsection__desscription"> We asked users how they listened to music&mdash; individual tracks, albums, playlist. </p> 
                         <ul> 
                             <li> People used a long list or streams of songs to listen to music without interrupts. On more traditional forms of music apps (v. Soundcloud which has a music feed that is more similar to blog posts on Tumblr) people used either playlists that they created themselves or playlists that were made by other people.</li> 
-                            <figure class="inline-img"> 
-                                <img src="img/MobilePlaylist/Soundcloud.png" class="threephoto figure__img"> 
+                            <figure class="threephoto"> 
+                                <img src="img/MobilePlaylist/Soundcloud.png" class="figure__img"> 
                                 <figcaption> Soundcloud Feed</figcaption> 
                             </figure> 
-                            <figure class="inline-img"> 
-                                <img src="img/MobilePlaylist/SpotifyPlaylist.png" class="threephoto figure__img"> 
+                            <figure class="threephoto"> 
+                                <img src="img/MobilePlaylist/SpotifyPlaylist.png" class="figure__img"> 
                                 <figcaption> Spotify Playlist </figcaption> 
                             </figure> 
                             <li> Most people used playlists while they were doing some kind of activity, such as showering or doing homework. They might not necessarily make specific playlists for that activity though. </li> 
@@ -112,16 +106,16 @@
                             <li> There was a lack of bulk options in some music apps. People couldn't add, delete, or reorder tracks quickly. </li>  
                             <li> Mobile applications tend to be too minimalistic, and as a result, controls aren't as intuitive. Soundcloud has a control where the user has to tap the screen while the track is playing in order to pause it or swipe left or right in order to move to the next or previous song, but there are no indications of these controls on the screen. While Apple uses titles as a method for switching between categories such as genres, albums, artists, etc. But, most users are not used to this, so they don't think to tap the title. This function is usually seen in things you can edit, such as on Google Documents, not for changing categories.</li> 
                         </ul> 
-                            <figure> 
-                                <img src="img/MobilePlaylist/Soundcloud.png" alt="" class="threephoto figure__img"> 
+                            <figure class="threephoto"> 
+                                <img src="img/MobilePlaylist/Soundcloud.png" alt="" class="figure__img"> 
                                 <figcaption class="smcaption"> Soundcloud's Unintuitive Audio Controls</figcaption> 
                             </figure> 
-                            <figure> 
-                                <img src="img/MobilePlaylist/AppleMusic.png" alt="" class="threephoto figure__img"> 
+                            <figure class="threephoto"> 
+                                <img src="img/MobilePlaylist/AppleMusic.png" alt="" class="figure__img"> 
                                 <figcaption class="smcaption"> Apple Music Editable Titles </figcaption> 
                             </figure> 
-                            <figure> 
-                                <img src="img/MobilePlaylist/Document.PNG" alt="" class="threephoto figure__img"> 
+                            <figure class="threephoto"> 
+                                <img src="img/MobilePlaylist/Document.PNG" alt="" class="figure__img"> 
                                 <figcaption class="smcaption"> Google Documents' Click to Edit Titles</figcaption> 
                             </figure> 
                     </div> 
@@ -144,12 +138,12 @@
                         </figure>
                         <div class="spacer"> &nbsp; </div> 
                         <li> Spotify and KKbox display the search results by similar categories i.e. Top Results, Songs, Artists, etc. We thought this was very useful to the user who may be searching for something that appears in many different categories when they only want the one. </li>
-                        <figure> 
-                            <img src="img/MobilePlaylist/KKBoxSearch.PNG" alt="" class="threephoto figure__img"> 
+                        <figure class="threephoto"> 
+                            <img src="img/MobilePlaylist/KKBoxSearch.PNG" alt="" class="figure__img"> 
                             <figcaption class="smcaption"> KKBox's Search Results </figcaption> 
                         </figure> 
-                        <figure> 
-                            <img src="img/MobilePlaylist/SpotifySearch.png" alt="" class="threephoto figure__img"> 
+                        <figure class="threephoto"> 
+                            <img src="img/MobilePlaylist/SpotifySearch.png" alt="" class="figure__img"> 
                             <figcaption class="smcaption"> Spotify's Search Results </figcaption> 
                         </figure>
                         <li> While interviewing people and comparing music applications, we discovered that there were two main ways that people created playlists. The first people to create a playlist from the (...) menu on a song in their search results, or creating a playlist and then adding songs from the playlist itself when this feature was supported. We decided to implement both since users used either of these methods. In music applications that did not support this functionality, we found users often searched for songs that they already had in their library after creating a blank playlist, so we wanted to make the route more direct and easier for users to be able to create playlists from existing music in their library.</li> 
@@ -164,36 +158,36 @@
                     </header>
                     <ul> 
                         <li> Albums and genres were generally represented as square blocks in Spotify and KKBox, while artists were displayed as a circle. In Apple Music, there was less distinguishability between an artist versus an album. We liked that the user could instantly tell what was which without having to read anything, so we used the same standard followed by Spotify and KKBox.</li>
-                        <figure> 
-                            <img src="img/MobilePlaylist/SpotifyAlbums.png" alt="" class="threephoto figure__img"> 
+                        <figure class="threephoto"> 
+                            <img src="img/MobilePlaylist/SpotifyAlbums.png" alt="" class="figure__img"> 
                             <figcaption class="smcaption"> Spotify albums represented as a square </figcaption> 
                         </figure> 
-                        <figure> 
-                            <img src="img/MobilePlaylist/SpotifyArtists.png" alt="" class="threephoto figure__img"> 
+                        <figure class="threephoto"> 
+                            <img src="img/MobilePlaylist/SpotifyArtists.png" alt="" class="figure__img"> 
                             <figcaption class="caption smcaption"> Spotify artists represented as a circle</figcaption> 
                         </figure> 
-                        <figure> 
-                            <img src="img/MobilePlaylist/AppleMusicArtists.PNG" alt="" class="threephoto figure__img"> 
+                        <figure class="threephoto"> 
+                            <img src="img/MobilePlaylist/AppleMusicArtists.PNG" alt="" class="figure__img"> 
                             <figcaption class="smcaption"> Apple Music artists &amp; albums - no distinction </figcaption> 
                         </figure> 
                         <li> The way that the content was displayed made it easier for the user to distinguish between an album, artist, song, etc. In Spotify, song tracks were always displayed as horizontal blocks that took up the width of the page. This was the case for albums and artists in the user's library on Spotify as well, I think, due to the sheer amount of music that the user can have. But while browsing, the artists and albums were displayed as blocks that easily distinguishable due to the previous point made. While in Apple Music and KKBox, listings of any type (artist, album, song, etc.) tended to be the same, of the horizontal block type. This takes more effort on the user's end, so decided on Spotify's way of distinguishing between artists, albums, etc. </li>
                         <div> 
-                            <figure>
-                                <img src="img/MobilePlaylist/KKBoxSongs.PNG" alt="" class="threephoto figure__img"> 
+                            <figure class="threephoto">
+                                <img src="img/MobilePlaylist/KKBoxSongs.PNG" alt="" class="figure__img"> 
                                 <figcaption class="smcaption"> KKBox Songs - Listing</figcaption> 
                             </figure> 
-                            <figure> 
-                                <img src="img/MobilePlaylist/KKBoxAlbums.PNG" alt="" class="threephoto figure__img"> 
+                            <figure class="threephoto"> 
+                                <img src="img/MobilePlaylist/KKBoxAlbums.PNG" alt="" class="figure__img"> 
                                 <figcaption class="smcaption"> KKBox Albums - Listing</figcaption> 
                             </figure>
                         </div> 
                         <div> 
-                            <figure> 
-                                <img src="img/MobilePlaylist/SpotifyAlbum.png" alt="" class="threephoto figure__img"> 
+                            <figure class="threephoto"> 
+                                <img src="img/MobilePlaylist/SpotifyAlbum.png" alt="" class="figure__img"> 
                                 <figcaption class="smcaption"> Spotify Albums - Card Display</figcaption> 
                             </figure> 
-                            <figure> 
-                                <img src="img/MobilePlaylist/SpotifyTracks.png" alt="" class="threephoto figure__img"> 
+                            <figure class="threephoto"> 
+                                <img src="img/MobilePlaylist/SpotifyTracks.png" alt="" class="figure__img"> 
                                 <figcaption class="smcaption"> Spotify Tracks - Listing</figcaption> 
                             </figure> 
                         </div> 

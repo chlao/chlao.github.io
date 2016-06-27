@@ -4,12 +4,8 @@ window.onresize = responsivehome;
 function responsivehome(){
   var footer_break = window.matchMedia( "(max-width: 880px)" );
   var projectmenu_break = window.matchMedia( "(max-width: 700px)" );
-  var projectmenu_break_2 = window.matchMedia( "(max-width: 485px)" );
-  var matched;
 
   if (footer_break.matches){
-    matched = true; 
-
     $('#navbar--mobile button').on('click', function(e){
       $('#navbar--mobile__links').slideToggle('slow'); 
     });
