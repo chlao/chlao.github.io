@@ -244,7 +244,7 @@ footer {
     margin: 0 auto;
     width: 225px; }
 
-  .navbar {
+  body #navbar--onpage, body #navbar--hidden {
     display: none; }
 
   #navbar--mobile {
@@ -442,7 +442,7 @@ figcaption {
 @media screen and (max-width: 1200px) {
   figure {
     width: 90%; }
-    figure *, figure .undercaption {
+    figure * {
       width: 90%; } }
 
 /*# sourceMappingURL=mobileplaylist.css.map */

@@ -345,9 +345,11 @@ footer{
     		}
     	}
 
-    	.navbar{
-    		display: none;
-    	}
+    	body{
+	    	#navbar--onpage, #navbar--hidden{
+	    		display: none;
+	    	}
+	    }
 
     	#navbar--mobile{
 			display: block;
