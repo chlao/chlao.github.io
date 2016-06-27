@@ -26,10 +26,6 @@ function responsivehome(){
     $('.primaryproj .overlay__text').removeClass('tertiaryproj__text');
     $('.secondaryproj .overlay__text').removeClass('tertiaryproj__text');
   }
-  // Show onpage menu
-  if (!matched){
-    $('#navbar--onpage').css('display', 'block');
-  } 
 }; 
 
 /* Smooth scrolling within the same page*/

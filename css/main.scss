@@ -316,6 +316,7 @@ footer{
    
    $project_menu_break: 1350px; 
    $footer_break: 880px; 
+   $right_content_break: 350px; 
 
     @media screen and (max-width: $project_menu_break){
         .layout__left, .layout__right{
@@ -330,12 +331,6 @@ footer{
     	footer{
     		.footer__contact{
     			display: none;
-    			/*
-    			display: block; 
-    			margin: 0 auto; 
-    			width: 410px; 
-    			float: none; 
-    			*/
     		}
 
     		#footer__name{
@@ -357,3 +352,8 @@ footer{
 		}
     }
 
+	@media screen and (max-height: $right_content_break){
+		.layout__right{
+			height: 120%; 	
+		}
+	}

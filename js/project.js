@@ -12,8 +12,4 @@ function responsive(){
       $('#navbar--mobile__links').slideToggle('slow'); 
     });
   }
-  
-  if (!matched){
-    $('#navbar--hidden').css('display', 'block');
-  }
 }; 
