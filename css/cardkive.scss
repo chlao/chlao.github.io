@@ -1,0 +1,27 @@
+@import 'project';
+
+.projectpage__img{
+	width: 90%;
+    height: auto;
+}
+
+#infographic{
+	.graphic{
+		width: 275px; 
+	}
+
+	figure{
+		margin-bottom: 65px;
+
+		figcaption{
+	        bottom: -50px;
+	        width: 275px; 
+		}
+	}
+}
+
+@media screen and (max-width: 900px){
+	#infographic figure{
+		margin-bottom: 0; 
+	}
+}

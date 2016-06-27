@@ -250,3 +250,133 @@ footer {
   #navbar--mobile {
     display: block;
     position: fixed; } }
+/* ==========================================================================
+   Left Layout 
+   ========================================================================== */
+.layout__left {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/DSC09683.JPG");
+  background-size: cover;
+  background-position: 100% 150%; }
+  .layout__left #graphic {
+    width: 400px;
+    padding-top: 15%; }
+  .layout__left #name {
+    font-size: 52px;
+    font-family: 'Muli', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    /*font-family: 'Montserrat', sans-serif;
+    font-weight: normal;*/ }
+  .layout__left #headline {
+    width: 60%;
+    margin: auto;
+    font-size: 20px; }
+
+/* ==========================================================================
+   Navigation Menu
+   ========================================================================== */
+#navbar--onpage {
+  position: absolute;
+  bottom: 0; }
+
+/* ==========================================================================
+   Projects Menu
+   ========================================================================== */
+.content {
+  padding: 75px 0;
+  background-color: #92ABBD;
+  clear: both; }
+  .content #content__projectmenu {
+    margin: 0 auto;
+    margin-bottom: 150px;
+    margin-top: 100px;
+    padding-left: 5%;
+    width: 1325px; }
+    .content #content__projectmenu .primaryproj .project__img {
+      width: 580px;
+      height: 580px; }
+    .content #content__projectmenu .secondaryproj .project__img {
+      width: 580px;
+      height: 280px;
+      object-position: 0 0; }
+    .content #content__projectmenu .tertiaryproj .project__img {
+      position: absolute;
+      left: -605px;
+      width: 278px;
+      height: 276px; }
+    .content #content__projectmenu .quaternaryproj .project__img {
+      left: -307px; }
+
+.overlay .overlay__text {
+  line-height: .4em; }
+  .overlay .overlay__text h3 {
+    font-size: 48px; }
+  .overlay .overlay__text p {
+    font-size: 28px;
+    line-height: 1.1em; }
+.overlay .tertiaryproj__text h3 {
+  font-size: 28px;
+  line-height: 1em; }
+.overlay .tertiaryproj__text p {
+  font-size: 22px; }
+
+/* ==========================================================================
+   Media Queries 
+   ========================================================================== */
+@media screen and (max-width: 1350px) {
+  .content #content__projectmenu {
+    width: 650px; }
+    .content #content__projectmenu .content__project {
+      margin-bottom: 10px; }
+    .content #content__projectmenu .secondaryproj {
+      display: block; }
+      .content #content__projectmenu .secondaryproj .overlay {
+        width: 590px; }
+    .content #content__projectmenu .tertiaryproj .overlay {
+      left: 10px;
+      top: 10px; }
+    .content #content__projectmenu .tertiaryproj .project__img {
+      position: static; } }
+@media screen and (max-width: 700px) {
+  .layout__left #graphic {
+    width: 300px; }
+
+  .content {
+    padding-bottom: 5px; }
+    .content #content__projectmenu {
+      width: 445px; }
+      .content #content__projectmenu .content__project {
+        display: block; }
+        .content #content__projectmenu .content__project .project__img {
+          width: 400px;
+          height: 300px; }
+        .content #content__projectmenu .content__project .overlay {
+          width: 410px;
+          height: 310px; } }
+@media screen and (max-width: 450px) {
+  .content #content__projectmenu {
+    width: 300px;
+    padding-left: 0; }
+    .content #content__projectmenu .content__project .project__img {
+      width: 278px;
+      height: 276px; }
+    .content #content__projectmenu .content__project .overlay {
+      width: 288px;
+      height: 286px; }
+
+  .layout__left #name {
+    font-size: 32px; } }
+@media screen and (max-height: 700px) {
+  .layout__left {
+    height: 100%;
+    padding-bottom: 25%; }
+    .layout__left #graphic {
+      padding-top: 25%; }
+
+  .layout__right {
+    height: 100%; } }
+@media screen and (max-width: 700px) {
+  .title {
+    font-size: 28px; } }
+
+/*# sourceMappingURL=index.css.map */

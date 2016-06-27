@@ -15,17 +15,11 @@
         <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
 
         <style> 
-            .caption{
+            caption{
                 width: 372px;
-            }
-            #process .midsection{
-                width: 1000px;
             }
             q{
                 font-size: 24px; 
-            }
-            #iteration .midsection{
-                width: 1150px; 
             }
         </style>
 
@@ -35,50 +29,78 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <ul class="navbar" id="hiddennav"> 
-            <li><a href="index.html"><img src="img/Dog%20Rear.png" alt="" class="icon"></a></li>
-            <li><a href="index.html"> Home </a></li> 
-            <li><a href="index.html#content"> Projects </a></li> 
-            <li><a href="Resume/resume.html"> Resume </a></li>
+        <ul class="navbar navbar--fill" id="navbar--hidden"> 
+            <li class="navbar__menuitem">
+                <a class="navbar__link" href="index.html">
+                    <img src="img/Dog%20Rear.png" alt="" class="icon navbar__icon">
+                </a>
+            </li>
+            <li class="navbar__menuitem">
+                <a class="navbar__link" href="index.html"> Home </a>
+            </li> 
+            <li class="navbar__menuitem">
+                <a class="navbar__link" href="index.html#content"> Projects </a>
+            </li> 
+            <li class="navbar__menuitem">
+                <a class="navbar__link" href="Resume/resume.html"> Resume </a>
+            </li>
         </ul> 
-        <ul class="navbar" id="mobilenav"> 
-            <li><a href="index.html"><img src="img/Dog%20Rear.png" alt="" class="icon"></a></li>
-            <li id="menuicon"><button class="icon">&nbsp;</button></li>
-            <ul id="mobilelinks"> 
-                <li><a href="index.html"> Home </a></li> 
-                <li><a href="index.html#content"> Projects </a></li> 
-                <li><a href="Resume/resume.html"> Resume </a></li>
+        <ul class="navbar" id="navbar--mobile"> 
+            <li class="navbar__menuitem">
+                <a class="navbar__link" href="index.html">
+                    <img src="img/Dog%20Rear.png" alt="" class="icon">
+                </a>
+            </li>
+            <li class="navbar__menuitem" id="navbar--mobile__menuicon">
+                <button class="icon">&nbsp;</button>
+            </li>
+            <ul class="navbar" id="navbar--mobile__links"> 
+                <li class="navbar__menuitem">
+                    <a class="navbar__link" href="index.html"> Home </a>
+                </li> 
+                <li class="navbar__menuitem">
+                    <a class="navbar__link" href="index.html#content"> Projects </a>
+                </li> 
+                <li class="navbar__menuitem">
+                    <a class="navbar__link" href="Resume/resume.html"> Resume </a>
+                </li>
             </ul>
-        </ul>  
-        <div class="left" id="theproject">
-            <span class="helper inline-img"></span>
-            <img src="img/FollowUp/FollowUpRobin.png" alt=""> 
+        </ul> 
+
+        <div class="spacer">
+            &nbsp;
+        </div>
+
+        <div class="layout__left" id="theproject">
+            <span class="helper"></span>
+            <img class="projectpage__img--mobile" src="img/FollowUp/FollowUpRobin.png" alt=""> 
         </div> 
-        <div class="right">
+        <div class="layout__right">
             <div class="rightcontent">
                 <h2 class="title">FollowUp </h2> 
-                <p> Built by a team of three students, FollowUp helps students build relationships with professionals furthering their goals towards careers and advanced education. Currently, professional social networking sites such as LinkedIn don't facilitate conversations. FollowUp brings students and professionals together in person, so the students can better find opportunities for professional development. </p> 
+                <p class="section__description"> Built by a team of three students, FollowUp helps students build relationships with professionals furthering their goals towards careers and advanced education. Currently, professional social networking sites such as LinkedIn don't facilitate conversations. FollowUp brings students and professionals together in person, so the students can better find opportunities for professional development. </p> 
                 <br>
                 <h2 class="subtitle">Role: Researcher &amp; Designer </h2> 
             </div>
         </div>
         <div> 
-        <div id="content">
-            <section id="process">
+        <div class="content">
+            <section id="section__process">
                 <h2 class="title">- Process -</h2> 
-                <div class="midsection">
-                    <div class="header"> 
-                        <h3> User Interviews and Surveys</h3> 
+                <div class="content__midsection">
+                    <header> 
+                        <h3 class="midsection__title"> User Interviews and Surveys</h3>
+                    </header> 
                         <q> I feel like my online network is getting me nowhere </q> <br><br>
                         <q> Talking to recruiters felt very shallow and brief </q> <br><br>
                         <q> I liked to talking to the professionals because I got to see what they are like. </q> 
                         <p> The general feeling we found from conducting user interviews with students was that their online connections were not nearly benefiting the to the extent they would like. Students want to talk to recruiters and professionals, but aren't reaching out for a variety of reasons. </p> 
-                    </div> 
-                <div class="midsection">
-                    <div class="header"> 
-                        <h3> Affinity Diagram </h3> 
-                        <p> We condensed the main concerns gathered from our user interviews and online research onto individual post it notes. We then did a group exercsise in which we grouped concerns and labaled these groups. We identified three main groups or problems: </p>
-                    </div> 
+                </div>
+                <div class="content__midsection">
+                    <header> 
+                        <h3 class="midsection__title"> Affinity Diagram </h3> 
+                        <p class="midsection__description"> We condensed the main concerns gathered from our user interviews and online research onto individual post it notes. We then did a group exercsise in which we grouped concerns and labaled these groups. We identified three main groups or problems: </p>
+                    </header> 
                     <ul>
                         <li>
                             <h4>Superficial Connections (v. Personal) </h4>
@@ -93,35 +115,35 @@
                             <p> There was a lot of social anxiety on the student's part involved in talking to a recruiter. Students often felt like they were lacking in experience and that they were just one in a applicant of many in the process. </p> 
                         </li>
                     </ul>
-                    <img src="img/FollowUp/AffinityDiagram.JPG" alt="" class="sketch">
+                    <img src="img/FollowUp/AffinityDiagram.JPG" alt="" class="project__content__img">
                 </div>  
-                <div class="midsection">
-                    <div class="header"> 
-                        <h3> Crazy Eight Brainstorming </h3> 
-                        <p> After identifying the problems, we quickly iterated on ideas through an exercise. Each member had four minutes to come up with four ideas. We would present our ideas to each other and repeat the process once more. </p> 
-                    </div> 
+                <div class="content__midsection">
+                    <header> 
+                        <h3 class="midsection__title"> Crazy Eight Brainstorming </h3> 
+                        <p ckass="midsection__description"> After identifying the problems, we quickly iterated on ideas through an exercise. Each member had four minutes to come up with four ideas. We would present our ideas to each other and repeat the process once more. </p> 
+                    </header> 
                     <p> We combined our ideas and came up with a rough first draft, an app that was similar to Happn, the dating app where users would get matched based on their proximity, but with students and recruiters instead. We would then suggest students and recruiters to meet up. </p> 
                     <p> But, we realized that this app was too focused on job seeking rather than building a network, so we scrapped the idea. </p> 
-                    <img src="img/FollowUp/FirstDraftRecruiter.jpg" alt="" class="sketch">
+                    <img src="img/FollowUp/FirstDraftRecruiter.jpg" alt="" class="project__content__img">
                 </div>  
             </section>
-            <section id="iteration"> 
+            <section id="section__iteration"> 
                 <h2 class="title">- Iteration -</h2> 
-                <div class="midsection"> 
-                    <div class="header"> 
-                        <h3> Second Paper Draft</h3> 
-                        <p> Our second draft also centered around matching around user-specified information that the recruiter would approve in order to combat the social barriers that arise from students feeling like they aren't what the recruiters are looking for. We tried to make the communication between the recruiter and student more personal by including a video call feature, but after conduct user testing, we found that users were still reluctant to reach out to recruiters. Students never met these people before. It was very intimidating for students to engage in a video call with someone you don't know. </p> 
-                    </div> 
-                    <img src="img/FollowUp/SecondPaperPrototype.JPG" alt="" class="sketch inline-img smmarginr twophoto">
-                    <img src="img/FollowUp/SecondPaperPrototypeTesting.jpg" alt="" class="sketch inline-img twophoto">
+                <div class="content__midsection"> 
+                    <header> 
+                        <h3 class="midsection__title"> Second Paper Draft</h3> 
+                        <p class="midsection__description"> Our second draft also centered around matching around user-specified information that the recruiter would approve in order to combat the social barriers that arise from students feeling like they aren't what the recruiters are looking for. We tried to make the communication between the recruiter and student more personal by including a video call feature, but after conduct user testing, we found that users were still reluctant to reach out to recruiters. Students never met these people before. It was very intimidating for students to engage in a video call with someone you don't know. </p> 
+                    </header> 
+                    <img src="img/FollowUp/SecondPaperPrototype.JPG" alt="" class="project__content__img twophoto">
+                    <img src="img/FollowUp/SecondPaperPrototypeTesting.jpg" alt="" class="project__content__img twophoto">
                 </div> 
-                <div class="midsection">
-                    <div class="header"> 
-                        <h3> Third Paper Draft </h3> 
-                        <p> AFter revisting our problem space, we focused back on connections that we've already made once before from career fairs, mixers, etc. We wanted to make these connections meaningful by having users keep in contact and develop a relationship with each other. We decided to make an app based on the Dining With Professors program at UCSD. The Dining With Profesors program allows students to network and get to know their professors over a meal. We felt that the most personal connection you can get is meeting with someone in person, so created FollowUp, an app that allows you to import your LinkedIn connections and request meetups with those connections in order to develop a more meaningful connection. </p> 
-                    </div> 
-                    <div class="inline-img">
-                        <div class="lazy" id="mobilePrototype">
+                <div class="content__midsection">
+                    <header> 
+                        <h3 class="midsection__title"> Third Paper Draft </h3> 
+                        <p class="midsection__description"> AFter revisting our problem space, we focused back on connections that we've already made once before from career fairs, mixers, etc. We wanted to make these connections meaningful by having users keep in contact and develop a relationship with each other. We decided to make an app based on the Dining With Professors program at UCSD. The Dining With Profesors program allows students to network and get to know their professors over a meal. We felt that the most personal connection you can get is meeting with someone in person, so created FollowUp, an app that allows you to import your LinkedIn connections and request meetups with those connections in order to develop a more meaningful connection. </p> 
+                    </header> 
+                    <div class="midsection__prototypes">
+                        <div class="lazy" id="mobileprototype">
                             <div><img alt="" data-lazy="img/FollowUp/prototype2/prototype1.JPG"></div>
                             <div><img alt="" data-lazy="img/FollowUp/prototype2/prototype2.JPG"></div>
                             <div><img alt="" data-lazy="img/FollowUp/prototype2/prototype3.JPG"></div>
@@ -137,64 +159,65 @@
                         </div>
                     </div>
                 </div>  
-                <div class="midsection"> 
-                    <div class="header"> 
-                        <h3> High Fidelity - First Draft </h3> 
-                        <p> One of our team members created a high-fidelity prototype based on on our paper prototype. We then proceeded to get feecback from our friends and other designers. Based on the feedback we recevied, we improved the app by making areas of our app, particularly the news feed where we can see our friend's FollowUps, more personal, in addition to some stylistic and small user-experience improvements.</p>
-                    </div> 
+                <div class="content__midsection"> 
+                    <header> 
+                        <h3 class="midsection__title"> High Fidelity - First Draft </h3> 
+                        <p class="midsection__description"> One of our team members created a high-fidelity prototype based on on our paper prototype. We then proceeded to get feecback from our friends and other designers. Based on the feedback we recevied, we improved the app by making areas of our app, particularly the news feed where we can see our friend's FollowUps, more personal, in addition to some stylistic and small user-experience improvements.</p>
+                    </header> 
                     <div class="subsection"> 
-                        <h4> > Feed </h4> 
-                        <p> In this first draft, we created a feed. We made the decision to include a feed based on a reserach study conducted on Facebook with voting. This study showed that people on Facebook are more likely to vote if they see that their friends are votign. But for this first draft, the feed only provided information on who was following up with who. We made the feed more personal and effective at encrouraging users to participate by allowing the users to post pictures of their FollowUp and add some description of their experiences. </p> 
-                        <figure class="inline-img smmarginr "> 
-                            <img src="img/FollowUp/FeedV1.PNG" alt=""> 
-                            <figcaption class="caption"> First Draft</figcaption> 
+                        <h4 class="subsection__title"> > Feed </h4> 
+                        <p class="subsection__description"> In this first draft, we created a feed. We made the decision to include a feed based on a reserach study conducted on Facebook with voting. This study showed that people on Facebook are more likely to vote if they see that their friends are votign. But for this first draft, the feed only provided information on who was following up with who. We made the feed more personal and effective at encrouraging users to participate by allowing the users to post pictures of their FollowUp and add some description of their experiences. </p> 
+                        <figure> 
+                            <img class="figure__img" src="img/FollowUp/FeedV1.PNG" alt=""> 
+                            <figcaption> First Draft</figcaption> 
                         </figure> 
-                        <figure class="inline-img smmarginr"> 
-                            <img src="img/FollowUp/FeedV2.PNG" alt=""> 
-                            <figcaption class="caption"> Final </figcaption> 
+                        <figure> 
+                            <img class="figure__img" src="img/FollowUp/FeedV2.PNG" alt=""> 
+                            <figcaption> Final </figcaption> 
                         </figure> 
                     </div> 
             </section> 
-            <section id="final">
+            <section id="section__final">
                 <h2 class="title">- Final -</h2> 
                 <iframe src="https://marvelapp.com/fe64f4?emb=1" width="452" height="901" allowTransparency="true" frameborder="0" class="center"></iframe>
             </section> 
-            <section id="lessons">
+            <section id="section__lessons">
                 <h2 class="title">- Lessons -</h2> 
-                <p> Something that was particularly challenging about this project was staying focused our goal. There were different interpretations of our goal held by our team members. For exmaple, my teammates understood the problem of being personal as showcasing personalities and personality-based matching, but while similar, I understood it more as conversations should feel more directed towards a pariticular person rather than a general conversation. In the future, I would establish and solidify a clear goal with everyone else on the team before proceeding with the project. </p> 
-                <p> Another thought for the future of FollowUp regards incentives on the professional side. We mostly focused on the students' side of networking, but in order for FollowUp to really become sucessful in the real world, we would need to interview and gather more information from the professionals' point of view. There are a lot of clear incentives for the student, but there weren't many clear incentives for professionals aide from helping out their community or free food. </p> 
+                <p class="section__description"> Something that was particularly challenging about this project was staying focused our goal. There were different interpretations of our goal held by our team members. For exmaple, my teammates understood the problem of being personal as showcasing personalities and personality-based matching, but while similar, I understood it more as conversations should feel more directed towards a pariticular person rather than a general conversation. In the future, I would establish and solidify a clear goal with everyone else on the team before proceeding with the project. </p> 
+                <p class="section__description"> Another thought for the future of FollowUp regards incentives on the professional side. We mostly focused on the students' side of networking, but in order for FollowUp to really become sucessful in the real world, we would need to interview and gather more information from the professionals' point of view. There are a lot of clear incentives for the student, but there weren't many clear incentives for professionals aide from helping out their community or free food. </p> 
             </section> 
         </div>  
-        <div id="moreprojects">
+
+        <div class="browseprojects">
             <h2 class="title"> More Projects </h2>
-            <div id="imagegrid" class="center">
-                <div class="project inline-img smmarginr" id="mainproj">
-                    <img src="img/CardKive/CardKiveSquare.PNG" alt="">
+            <div id="content__projectmenu">
+                <div class="content__project">
+                    <img class="project__img" src="img/CardKive/CardKiveSquare.PNG" alt="">
                     <a href="mainproject.html"> 
-                        <div class="overlay"> 
-                            <div class="overlaytext"> 
-                                <h3> CardKive </h3>
-                                <p> Website, Graphic Design </p>
-                            </div> 
-                        </div> 
-                    </a>
-                </div> 
-                <div class="project inline-img smmarginr" id="secondproj"> 
-                    <img src="img/Salehound/salehound.PNG">
-                    <a href="secondproject.html"> 
                     <div class="overlay">
-                        <div class="overlaytext"> 
-                            <h3> Salehound </h3>
-                            <p> Web Application, User Research </p>
+                        <div class="overlay__text tertiaryproj__text"> 
+                            <h3> CardKive </h3>
+                            <p> Website, Graphic Design </p>
                         </div>
                     </div> 
                     </a>
                 </div> 
-                <div class="project thirdproj inline-img smmarginr"> 
-                    <img src="img/MobilePlaylist/MobilePlaylistMain.png">
-                    <a href="#"> 
+                <div class="content__project"> 
+                    <img class="project__img" src="img/Salehound/salehound.PNG" alt="">
+                    <a href="secondproject.html"> 
                     <div class="overlay"> 
-                        <div class="overlaytext"> 
+                        <div class="overlay__text"> 
+                            <h3> Salehound </h3>
+                            <p> Web Application, User Research </p>
+                        </div> 
+                    </div> 
+                    </a>
+                </div> 
+                 <div class="content__project"> 
+                    <img class="project__img" src="img/MobilePlaylist/MobilePlaylistMain.png" alt="">
+                    <a href="thirdproject.html"> 
+                    <div class="overlay"> 
+                        <div class="overlay__text"> 
                             <h3> Mobile Playlist Management </h3>
                             <p> Information Architecture</p>
                         </div> 
@@ -204,13 +227,13 @@
             </div>
         </div>
 
-        <footer class="footer">
-            <h2> Christine Lao </h2>
-            <div class="contact"> 
-                <h2> Contact Me </h2>
-                <p> christy_11_12@yahoo.com </p> 
+        <footer>
+            <h2 class="footer__title" id="footer__name"> Christine Lao </h2>
+            <div class="footer__contact"> 
+                <h2 class="footer__title" id="contact__title"> Contact Me </h2>
+                <p id="contact__email"> christy_11_12@yahoo.com </p> 
                 <a href="https://www.linkedin.com/in/christinelao3o" target="_blank"><img src="img/linkedin.png" class="icon smmarginr"></a>
-                <a href="https://github.com/cghlao" target="_blank"><img src="img/GitHub.png" class="icon"></a>
+                <a href="https://github.com/chlao" target="_blank"><img src="img/GitHub.png" class="icon"></a>
             </div> 
         </footer>
 

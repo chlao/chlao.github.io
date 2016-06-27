@@ -8,32 +8,32 @@ function responsive(){
   var matched;
 
   if (mq.matches) {
-    /* Remove 'Contact Me'*/
+    /* Remove 'Contact Me'
     document.querySelector('.contact h2').innerHTML = '';
   } 
   else{
-    document.querySelector('.contact h2').innerHTML = 'Contact Me';
+    document.querySelector('.contact h2').innerHTML = 'Contact Me';*/
   }
 
   if (mq775.matches){
     matched = true; 
     // Remove Name 
-    document.querySelectorAll('.footer > h2')[0].innerHTML = ''; 
+    //document.querySelectorAll('.footer > h2')[0].innerHTML = ''; 
 
     // Hide navigation menus
-    $('.navbar').css('display', 'none');
+    //$('.navbar').css('display', 'none');
 
-    $('#mobilenav').css('display', 'block');
-    $('#mobilenav').css('position', 'fixed');
+    //$('#navbar--mobile').css('display', 'block');
+    //$('#navbar--mobile').css('position', 'fixed');
 
     $('button').on('click', function(e){
       $('#mobilelinks').slideToggle('slow'); 
     });
   }
   else{
-    document.querySelectorAll('.footer > h2')[0].innerHTML = 'Christine Lao'; 
+    document.querySelectorAll('footer > h2')[0].innerHTML = 'Christine Lao'; 
     $('.navbar').css('display', 'none');
-    $('#hiddennav').css('display', 'block');
+    $('#navbar--hidden').css('display', 'block');
   }
 
   if (mq450.matches){
@@ -43,6 +43,6 @@ function responsive(){
 	
   // Show onpage menu
   if (!matched){
-    $('#hiddennav').css('display', 'block');
+    $('#navbar--hidden').css('display', 'block');
   }
 }; 

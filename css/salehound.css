@@ -429,3 +429,69 @@ figcaption, .slide_caption {
   .content .section__reverse figcaption {
     width: 90%;
     background-color: gray; } }
+.card {
+  width: 370px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  width: 370px;
+  vertical-align: top;
+  padding-top: 10px;
+  background-color: black;
+  display: inline-block; }
+  .card img {
+    width: 350px;
+    height: 275px;
+    margin: 0 auto;
+    display: block; }
+  .card h2, .card p {
+    margin: 10px 15px; }
+
+.layout__left {
+  background-color: white; }
+
+#abtestresults__table thead th:first-child {
+  background-color: gray; }
+#abtestresults__table th, #abtestresults__table td {
+  font-size: 24px;
+  padding: 5px 10px;
+  width: 1%;
+  background-color: black;
+  text-align: center; }
+#abtestresults__table th {
+  background-color: #92ABBD;
+  color: black;
+  border-color: #92ABBD; }
+#abtestresults__table td {
+  border-bottom: 1px solid #4C4C4C;
+  border-right: 1px solid #4C4C4C; }
+
+.midsection__prototypes:first-of-type {
+  margin-right: 75px; }
+
+.midsection__prototypes {
+  display: inline-block; }
+  .midsection__prototypes .slide_caption {
+    left: 44px;
+    width: 412.5px; }
+  .midsection__prototypes #itemprototype .slide_caption {
+    width: 311px;
+    left: 94px; }
+
+#midsection__heuristic ul {
+  width: 60%; }
+
+#midsection__ABtesting .twophoto {
+  margin: 0;
+  margin-bottom: 15px;
+  margin-right: 15px; }
+
+@media screen and (max-width: 1200px) {
+  #midsection__heuristic ul {
+    width: 80%; } }
+@media screen and (max-width: 900px) {
+  #midsection__ABtesting .twophoto {
+    margin: 0;
+    margin-right: 15px; } }
+
+/*# sourceMappingURL=salehound.css.map */

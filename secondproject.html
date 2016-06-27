@@ -10,17 +10,16 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/project.css">
+        <link rel="stylesheet" href="css/salehound.css">
 
         <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
 
-        <style> 
+        <!--<style> 
             .caption, .slide_caption{
                 width: 490px;
             }
-        </style> 
+        </style> -->
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -28,29 +27,51 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <ul class="navbar" id="hiddennav"> 
-            <li><a href="index.html"><img src="img/Dog%20Rear.png" alt="" class="icon"></a></li>
-            <li><a href="index.html"> Home </a></li> 
-            <li><a href="index.html#content"> Projects </a></li> 
-            <li><a href="Resume/resume.html"> Resume </a></li>
+        <ul class="navbar navbar--fill" id="navbar--hidden"> 
+            <li class="navbar__menuitem">
+                <a class="navbar__link" href="index.html">
+                    <img src="img/Dog%20Rear.png" alt="" class="icon navbar__icon">
+                </a>
+            </li>
+            <li class="navbar__menuitem">
+                <a class="navbar__link" href="index.html"> Home </a>
+            </li> 
+            <li class="navbar__menuitem">
+                <a class="navbar__link" href="index.html#content"> Projects </a>
+            </li> 
+            <li class="navbar__menuitem">
+                <a class="navbar__link" href="Resume/resume.html"> Resume </a>
+            </li>
         </ul> 
-        <ul class="navbar" id="mobilenav"> 
-            <li><a href="index.html"><img src="img/Dog%20Rear.png" alt="" class="icon"></a></li>
-            <li id="menuicon"><button class="icon">&nbsp;</button></li>
-            <ul id="mobilelinks"> 
-                <li><a href="index.html"> Home </a></li> 
-                <li><a href="index.html#content"> Projects </a></li> 
-                <li><a href="Resume/resume.html"> Resume </a></li>
+        <ul class="navbar" id="navbar--mobile"> 
+            <li class="navbar__menuitem">
+                <a class="navbar__link" href="index.html">
+                    <img src="img/Dog%20Rear.png" alt="" class="icon">
+                </a>
+            </li>
+            <li class="navbar__menuitem" id="navbar--mobile__menuicon">
+                <button class="icon">&nbsp;</button>
+            </li>
+            <ul class="navbar" id="navbar--mobile__links"> 
+                <li class="navbar__menuitem">
+                    <a class="navbar__link" href="index.html"> Home </a>
+                </li> 
+                <li class="navbar__menuitem">
+                    <a class="navbar__link" href="index.html#content"> Projects </a>
+                </li> 
+                <li class="navbar__menuitem">
+                    <a class="navbar__link" href="Resume/resume.html"> Resume </a>
+                </li>
             </ul>
         </ul> 
         <div class="spacer">
             &nbsp;
         </div>
-        <div class="left" id="theproject">
+        <div class="layout__left" id="theproject">
             <span class="helper inline-img"></span>
-            <img src="img/Salehound/salehoundmain.png" alt=""> 
+            <img class="projectpage__img--mobile" src="img/Salehound/salehoundmain.png" alt=""> 
         </div>
-        <div class="right">
+        <div class="layout__right">
             <span class="helper"></span>
             <div class="rightcontent">
                 <h2 class="title">Salehound</h2>
@@ -59,64 +80,60 @@
                 <h2 class="subtitle">Role: Developer, Designer, &amp; Researcher </h2> 
             </div>
         </div>
-        <div id="content">
-            <section id="process"> 
+        <div class="content">
+            <section id="section__process"> 
                 <h2 class="title">- Process -</h2> 
-                <p> Our process started with observation and needfinding. </p> 
-                <div class="midsection" id="storyboard"> 
-                    <div class="header">
-                        <h3> Storyboarding </h3> 
-                        <p> Our user is anyone who shops and wants to stay updated with the latest sales, but is frustrated with the large amount of e-mails they receive everyday from these stores. Salehound allows the customer to have control over what they see from the store and when they see it.</p> 
-                    </div>
-                    <div>
-                        <img src="img/Salehound/storyboard1.jpg" alt="" class="smmarginr">
-                        <img src="img/Salehound/storyboard2.jpg" alt="">
-                    </div> 
+                <p class="section__description"> Our process started with observation and needfinding. </p> 
+                <div class="content__midsection" id="storyboard"> 
+                    <header>
+                        <h3 class="midsection__title"> Storyboarding </h3> 
+                        <p class="midsection__description"> Our user is anyone who shops and wants to stay updated with the latest sales, but is frustrated with the large amount of e-mails they receive everyday from these stores. Salehound allows the customer to have control over what they see from the store and when they see it.</p> 
+                    </header>                                         
+                        <img class="twophoto smmarginr" src="img/Salehound/storyboard1.jpg" alt="">
+                        <img class="twophoto" src="img/Salehound/storyboard2.jpg" alt="">
                 </div> 
-                <div class="midsection" id="inspiration"> 
-                    <div class="header"> 
-                        <h3> Inspiration Finding</h3>
-                        <p> We researched and gathered ideas for Salehound from applications that we use in our daily lives. One of the main things we learned from this was that we wanted to focus on customizability and a lot of user control of what they wanted to see.  </p>
-                    </div> 
-                    <div>
-                    <div class="card inline-img smmarginr"> 
+                <div class="content__midsection" id="inspiration"> 
+                    <header> 
+                        <h3 class="midsection__title"> Inspiration Finding</h3>
+                        <p class="midsection__description"> We researched and gathered ideas for Salehound from applications that we use in our daily lives. One of the main things we learned from this was that we wanted to focus on customizability and a lot of user control of what they wanted to see.  </p>
+                    </header> 
+                    <div class="card"> 
                         <img src="img/Salehound/gmail.png" alt="">
                         <h2> G-mail </h2>
                         <p> Even when email services like Gmail separate promotional emails from personal ones, it is still difficult to search through all the promotional emails for what an individual wants. We want to use this problem as inspiration for change. </p>
                     </div>
-                    <div class="card inline-img smmarginr"> 
+                    <div class="card"> 
                         <img src="img/Salehound/reddit.png" alt="">
                         <h2> Reddit </h2>
                         <p> Reddit is an inspiration because of its customizability. We like that Reddit allows users to subscribe to different subreddits thus changing their experience with the website over time. Users can find which subreddits they enjoy and can ignore others. This builds a user’s relationship with the website. </p>
                     </div> 
-                    <div class="card inline-img smmarginr">  
+                    <div class="card">  
                         <img src="img/Salehound/pinterest.png" alt="">
                         <h2> Pinterest </h2>
                         <p>Pinterest is an inspiration because of its organizational properties. Pinterest provides users the ability to organize items and ideas into their own categories. We like the customizability of the categories. We feel that it allows users the ability to tailor the site to their specific needs.</p>
                     </div>
-                    <div class="card inline-img smmarginr"> 
+                    <div class="card"> 
                         <img src="img/Salehound/retailmenot.png" alt="">
                         <h2> RetailMeNot </h2>
                         <p> We like the notification system that RetailMeNot uses. They notify users if they have coupons that will expire soon through a push notification. We could possibly use something similar for sales. </p>
                     </div>
-                    <div class="card inline-img smmarginr"> 
+                    <div class="card"> 
                         <img src="img/Salehound/shopkick.png" alt="">
                         <h2> Shop Kick </h2>
                         <p> We like Shop Kick because of how it provides items from different companies and gives you more coupons if you shop at a certain store. This allows the app to be personalized without direct user input because the app changes based on what the user buys through the app. </p>
                     </div>
-                    <div class="card inline-img smmarginr"> 
+                    <div class="card"> 
                         <img src="img/Salehound/tumblr.png" alt="">
                         <h2> Tumblr </h2>
                         <p> We like how Tumblr incorporates multiple sources into one feed. We would like to use this function to allow users to view material from multiple stores. </p>
                     </div>
                 </div>
-                </div> 
-                <div class="midsection" id="prototypes"> 
-                    <div class="header"> 
-                        <h3> Prototyping </h3>
-                        <p> We created two prototypes, based on how we would organize the sales information presented to the users. </p>
-                    </div>
-                    <div class="inline-img">
+                <div class="content__midsection" id="prototypes"> 
+                    <header> 
+                        <h3 class="midsection__title"> Prototyping </h3>
+                        <p class="midsection__description"> We created two prototypes, based on how we would organize the sales information presented to the users. </p>
+                    </header>
+                    <div class="midsection__prototypes">
                         <div class="lazy" id="storeprototype">
                             <div><img alt="" data-lazy="img/Salehound/prototype1/prototype1.jpg"><div class="slide_caption"> Store-based </div></div>
                             <div><img alt="" data-lazy="img/Salehound/prototype1/prototype2.jpg"></div>
@@ -126,10 +143,9 @@
                             <div><img alt="" data-lazy="img/Salehound/prototype1/prototype6.jpg"></div>
                             <div><img alt="" data-lazy="img/Salehound/prototype1/prototype7.jpg"></div>
                             <div><img alt="" data-lazy="img/Salehound/prototype1/prototype8.jpg"></div>
-                            
                         </div>
                     </div>
-                    <div class="inline-img">
+                    <div class="midsection__prototypes">
                         <div class="lazy" id="itemprototype">
                             <div><img alt="" data-lazy="img/Salehound/prototype2/1.jpg"/><div class="slide_caption"> Item-based </div></div>
                             <div><img alt="" data-lazy="img/Salehound/prototype2/2.jpg"/></div>
@@ -143,14 +159,14 @@
                     </div> 
                 </div> 
             </section> 
-            <section id="iteration" class="reverse"> 
+            <section id="section__iteration" class="section__reverse"> 
                 <h2 class="title">- Iteration -</h2> 
-                <p> We tested our design at various stages in the design and development process. </p>
-                <div class="midsection" id="heuristic">
-                    <div class="header"> 
-                        <h3> Heuristic Evaluation </h3>
-                        <p> After creating prototypes for Salehound, we did some allowed users to test them and evaluate them based on Neilsen's ten heuristics. These are the results and what we took into consideration for the next steps in designing and developing Salehound. </p> 
-                    </div> 
+                <p class="section__description"> We tested our design at various stages in the design and development process. </p>
+                <div class="content__midsection" id="midsection__heuristic">
+                    <header> 
+                        <h3 class="midsection__title"> Heuristic Evaluation </h3>
+                        <p class="midsection__description"> After creating prototypes for Salehound, we did some allowed users to test them and evaluate them based on Neilsen's ten heuristics. These are the results and what we took into consideration for the next steps in designing and developing Salehound. </p> 
+                    </header> 
                     <ul>
                         <li> No ability to save individual offers 
                             <p>The stores can be saved to a favorites area, but the individual sales/promotions/offers could not be saved. This is a problem with <b>recognition rather than recall</b> as it  presents a challenge for users to retrieve the sales they are interested in. A good example of a solution for this can be seen in the Google Offers app. </p>
@@ -169,11 +185,11 @@
                         </li>
                     </ul>
                 </div> 
-                <div class="midsection" id="usertesting">
-                    <div class="header"> 
-                        <h3>User Testing</h3>
-                        <p> After beginning to develop Salehound based on the prototypes, we tested our application on real users. We asked them to complete a task on our app while we observed them. We discovered some presure points, and decided to make some changes based on that. </p>
-                    </div>
+                <div class="content__midsection" id="usertesting">
+                    <header> 
+                        <h3 class="midsection__title">User Testing</h3>
+                        <p class="midsection__description"> After beginning to develop Salehound based on the prototypes, we tested our application on real users. We asked them to complete a task on our app while we observed them. We discovered some presure points, and decided to make some changes based on that. </p>
+                    </header>
                     <ul> 
                         <li> Each sale has a link to the website for the sale </li>
                         <li> Add a sale item picture to each sale on the homepage (to distinguish from stores) </li>
@@ -181,18 +197,22 @@
                         <li> Separate the login and create account page using a dropdown menu from manage account </li> 
                     </ul> 
                 </div> 
-                <div class="midsection" id="ABtesting">
-                    <div class="header"> 
-                        <h3> A/B Testing </h3>
-                        <p> For our A/B testing, we chose to offer an alternative homepage—one that had more of a grid like screen and one that required more scrolling, like a feed. We tracked the watch button on the sales and compared the number of clicks between the two different home pages. Altogether, we gathered 29 people to test our web application. It seemed like a lot of people had trouble starting, often asking what they should do. Some people suggested a landing page when you first visit the page to tell you what to do. It may not be entirely clear to people what the application is for. It seems like a large amount of people would just view the application rather than interacting with the buttons. It may also be the case that they do not want to commit to watching a sale at first glance as one person mentioned that they did not want to track the sale. </p>
-                    </div> 
-                    <div> 
-                        <figure class="inline-img smmarginr"><img src="img/Salehound/ABtestingfeed.PNG" alt=""><figcaption class="caption">Feed-based</figcaption></figure>
-                        <figure class="inline-img"><img src="img/Salehound/ABtestingalt.PNG" alt=""><figcaption class="caption">Grid-based</figcaption></figure>
-                    </div> 
+                <div class="content__midsection" id="midsection__ABtesting">
+                    <header> 
+                        <h3 class="midsection__title"> A/B Testing </h3>
+                        <p class="midsection__description"> For our A/B testing, we chose to offer an alternative homepage—one that had more of a grid like screen and one that required more scrolling, like a feed. We tracked the watch button on the sales and compared the number of clicks between the two different home pages. Altogether, we gathered 29 people to test our web application. It seemed like a lot of people had trouble starting, often asking what they should do. Some people suggested a landing page when you first visit the page to tell you what to do. It may not be entirely clear to people what the application is for. It seems like a large amount of people would just view the application rather than interacting with the buttons. It may also be the case that they do not want to commit to watching a sale at first glance as one person mentioned that they did not want to track the sale. </p>
+                    </header> 
+                    <figure class="twophoto">
+                        <img class="figure__img" src="img/Salehound/ABtestingfeed.PNG" alt="">
+                        <figcaption>Feed-based</figcaption>
+                    </figure>
+                    <figure class="twophoto">
+                        <img class="figure__img" src="img/Salehound/ABtestingalt.PNG" alt="">
+                        <figcaption>Grid-based</figcaption>
+                    </figure>
                     <div id="results" class="subsection"> 
-                        <h4> > Results </h4> 
-                        <table id="abtestresults">
+                        <h4 class="subsection__title"> > Results </h4> 
+                        <table id="abtestresults__table">
                             <thead>
                                 <tr>
                                     <th> &nbsp; </th>
@@ -226,52 +246,52 @@
                         </table>
                     </div> 
                     <div id="chisquare" class="subsection">
-                        <h4> > Chi-squared Test </h4>
-                        <p> Based on the Chi-Squared analysis of the A/B testing results, it seems like there is most likely no significant difference between using the grid design and the feed design in terms of user preference. This was the case both with respect to mobile and computer interfaces and overall without looking at such data. </p> 
-                        <p> So ultimately, we decided to go with the feed, since Salehound is meant for people to use anywhere they want, and that includes their phones. The content on a grid layout as seen on a mobile device appears much smaller, so the user would have a harder time reading it.</p>
+                        <h4 class="subsection__title"> > Chi-squared Test </h4>
+                        <p class="subsection__description"> Based on the Chi-Squared analysis of the A/B testing results, it seems like there is most likely no significant difference between using the grid design and the feed design in terms of user preference. This was the case both with respect to mobile and computer interfaces and overall without looking at such data. </p> 
+                        <p class="subsection__description"> So ultimately, we decided to go with the feed, since Salehound is meant for people to use anywhere they want, and that includes their phones. The content on a grid layout as seen on a mobile device appears much smaller, so the user would have a harder time reading it.</p>
                     </div>
                 </div>
             </section> 
-            <section id="final"> 
+            <section id="section__final"> 
                 <h2 class="title">- Final Product -</h2> 
-                <p> The theme of our studio was "to improve how relevant information is brought to us as we move about in daily life, this includes both determining what new information can be useful as well as creating intuitive ways of presenting this information to users." Nowadays, information is ubiquitous, but we don't have streamlined ways to bring all this information to people in ways that is organized so that the information is easily absorbed and understood. Our application started when one of our teammates noticed that his e-mail was cluttered with so many offers from different stores. And these e-mails not only advertise sales, but new products, stores opening, etc. With so much clutter, I can't find what I'm usually looking for-discounts and sales. Salehound allows you to personalize the sales you look at based on the stores you select. You can unsubscribe and subscribe easily from these stores, in case you ever change your mind rather going through the sometimes cumbersome process of unsubscribing from store e-mails. Additionally, you can easily search for specific stores and view the deals being offered from that particular store. Our application also lets you keep track of offers, allowing you easy access to expiration dates of coupons and end dates for ongoing sales. Our application organizes all this information available and presents it in a way that is easily accessed. </p>
-                <img src="img/Salehound/salehound.PNG" alt="" class="center"> 
+                <p class="section__description"> The theme of our studio was "to improve how relevant information is brought to us as we move about in daily life, this includes both determining what new information can be useful as well as creating intuitive ways of presenting this information to users." Nowadays, information is ubiquitous, but we don't have streamlined ways to bring all this information to people in ways that is organized so that the information is easily absorbed and understood. Our application started when one of our teammates noticed that his e-mail was cluttered with so many offers from different stores. And these e-mails not only advertise sales, but new products, stores opening, etc. With so much clutter, I can't find what I'm usually looking for-discounts and sales. Salehound allows you to personalize the sales you look at based on the stores you select. You can unsubscribe and subscribe easily from these stores, in case you ever change your mind rather going through the sometimes cumbersome process of unsubscribing from store e-mails. Additionally, you can easily search for specific stores and view the deals being offered from that particular store. Our application also lets you keep track of offers, allowing you easy access to expiration dates of coupons and end dates for ongoing sales. Our application organizes all this information available and presents it in a way that is easily accessed. </p>
+                <img class="project__content__img" src="img/Salehound/salehound.PNG" alt=""> 
             </section> 
-            <section id="lessons" class="reverse"> 
+            <section id="section__lessons" class="section__reverse"> 
                 <h2 class="title">- Lessons Learned -</h2> 
-                <p>We've made several changes to this project so far in order to streamline the user's interactive process. We've changed the language and presentation so that it is more intuitive to the user. She or he won't have to guess what the button they are clicking on will do. This is a result of our heuristic evaluations received. By demoing prototypes to people outside our group, we found make user-related confusions and improved upon it. For example, we used to only have an icon with a shopping bag on it, but users found it unintuitive to click on it to go to "My Stores". Additionally, making prototypes helped out better streamline the process, because we were more aware of the flow of the application as we created each page. It was helpful to realize what would work and what wouldn't work. Additionally, because we worked on the prototypes as a team, we were all able present our ideas and integrate them into one main idea once we provided each other with feedback. All these tools that we've been learning have helped us design and redesign our project so that it is better utilized by the average user. </p>
+                <p class="section__description">We've made several changes to this project so far in order to streamline the user's interactive process. We've changed the language and presentation so that it is more intuitive to the user. She or he won't have to guess what the button they are clicking on will do. This is a result of our heuristic evaluations received. By demoing prototypes to people outside our group, we found make user-related confusions and improved upon it. For example, we used to only have an icon with a shopping bag on it, but users found it unintuitive to click on it to go to "My Stores". Additionally, making prototypes helped out better streamline the process, because we were more aware of the flow of the application as we created each page. It was helpful to realize what would work and what wouldn't work. Additionally, because we worked on the prototypes as a team, we were all able present our ideas and integrate them into one main idea once we provided each other with feedback. All these tools that we've been learning have helped us design and redesign our project so that it is better utilized by the average user. </p>
             </section> 
         </div>
-        <div id="moreprojects">
+        <div class="browseprojects">
             <h2 class="title"> More Projects </h2>
-            <div id="imagegrid" class="center">
-                <div class="project inline-img smmarginr" id="mainproj">
-                    <img src="img/CardKive/CardKiveSquare.PNG" alt="">
+            <div id="content__projectmenu">
+                <div class="content__project smmarginr">
+                    <img class="project__img" src="img/CardKive/CardKiveSquare.PNG" alt="">
                     <a href="mainproject.html"> 
-                        <div class="overlay"> 
-                            <div class="overlaytext"> 
-                                <h3> CardKive </h3>
-                                <p> Website, Graphic Design </p>
-                            </div> 
-                        </div> 
+                    <div class="overlay">
+                        <div class="overlay__text tertiaryproj__text"> 
+                            <h3> CardKive </h3>
+                            <p> Website, Graphic Design </p>
+                        </div>
+                    </div> 
                     </a>
                 </div> 
-                <div class="project thirdproj inline-img smmarginr"> 
-                    <img src="img/MobilePlaylist/MobilePlaylistMain.png">
+                <div class="content__project smmarginr"> 
+                    <img class="project__img" src="img/MobilePlaylist/MobilePlaylistMain.png" alt="">
                     <a href="thirdproject.html"> 
                     <div class="overlay"> 
-                        <div class="overlaytext"> 
+                        <div class="overlay__text"> 
                             <h3> Mobile Playlist Management </h3>
                             <p> Information Architecture</p>
                         </div> 
                     </div> 
                     </a>
                 </div> 
-                 <div class="project thirdproj inline-img"> 
-                    <img src="img/FollowUp/FollowUpLogo.PNG" alt="">
+                 <div class="content__project"> 
+                    <img class="project__img" src="img/FollowUp/FollowUpLogo.PNG" alt="">
                     <a href="forthproject.html"> 
                     <div class="overlay"> 
-                        <div class="overlaytext"> 
+                        <div class="overlay__text"> 
                             <h3> FollowUp </h3>
                             <p> User Research, Designer </p>
                         </div> 
@@ -281,13 +301,13 @@
             </div>
         </div>
 
-        <footer class="footer">
-            <h2> Christine Lao </h2>
-            <div class="contact"> 
-                <h2> Contact Me </h2>
-                <p> christy_11_12@yahoo.com </p> 
-                <a href="https://www.linkedin.com/in/christinelao3o" target="_blank"><img src="img/linkedin.png" alt="" class="icon smmarginr"></a>
-                <a href="https://github.com/chlao" target="_blank"><img src="img/GitHub.png" alt="" class="icon"></a>
+        <footer>
+            <h2 class="footer__title" id="footer__name"> Christine Lao </h2>
+            <div class="footer__contact"> 
+                <h2 class="footer__title" id="contact__title"> Contact Me </h2>
+                <p id="contact__email"> christy_11_12@yahoo.com </p> 
+                <a href="https://www.linkedin.com/in/christinelao3o" target="_blank"><img src="img/linkedin.png" class="icon smmarginr"></a>
+                <a href="https://github.com/chlao" target="_blank"><img src="img/GitHub.png" class="icon"></a>
             </div> 
         </footer>
 

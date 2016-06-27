@@ -10,8 +10,8 @@
     width: 400px;
     padding-top: 5%;
 }
-.onpage{
-    position: absolute; 
+#navbar--onpage{
+    position: absolute;
     bottom: 0;
 }
 

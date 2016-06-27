@@ -2,7 +2,6 @@
    General Styles
    ========================================================================== */
 img {
-  display: inline-block;
   vertical-align: middle;
   object-fit: cover; }
 
@@ -63,15 +62,7 @@ body * {
   letter-spacing: 0.1em;
   text-align: center;
   font-size: 42px;
-  letter-spacing: 0.2em;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  -ms-word-break: break-all;
-  word-break: break-word;
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto; }
+  letter-spacing: 0.2em; }
 
 /* ==========================================================================
    Split Layout
@@ -80,11 +71,6 @@ body * {
   width: 50%;
   text-align: center;
   height: 100vh; }
-
-.content {
-  padding-bottom: 75px;
-  background-color: #92ABBD;
-  clear: both; }
 
 .layout__left {
   float: left;
@@ -102,19 +88,7 @@ body * {
 /* ==========================================================================
    Projects Menu
    ========================================================================== */
-.content__project {
-  display: inline-block;
-  position: relative; }
-
-.project__img:hover .overlay, .overlay:hover {
-  opacity: .85; }
-
-.project__img:hover .overlay__text, .overlay:hover .overlay__text {
-  opacity: 1;
-  top: 0; }
-
 .overlay {
-  display: inline-block;
   background-color: #232223;
   position: absolute;
   width: 100%;
@@ -173,7 +147,7 @@ body * {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.1em; }
-  .navbar .navbar__link:hover {
+  .navbar .navbar_link:hover {
     color: black; }
 
 .navbar--fill .navbar__menuitem {
@@ -250,3 +224,8 @@ footer {
   #navbar--mobile {
     display: block;
     position: fixed; } }
+@media screen and (max-width: 700px) {
+  .title {
+    font-size: 28px; } }
+
+/*# sourceMappingURL=navigation.css.map */
