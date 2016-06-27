@@ -6,6 +6,9 @@ img {
   vertical-align: middle;
   object-fit: cover; }
 
+figure {
+  margin-right: 16px; }
+
 .icon {
   height: 50px;
   width: 50px; }
@@ -20,6 +23,9 @@ img {
 .spacer {
   width: 100%;
   height: 60px; }
+
+body {
+  overflow-x: hidden; }
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -244,9 +250,6 @@ footer {
   #navbar--mobile {
     display: block;
     position: fixed; } }
-@media screen and (max-height: 350px) {
-  .layout__right {
-    height: 120%; } }
 /* ==========================================================================
    Left Layout 
    ========================================================================== */

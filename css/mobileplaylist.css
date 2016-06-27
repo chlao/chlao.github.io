@@ -6,6 +6,9 @@ img {
   vertical-align: middle;
   object-fit: cover; }
 
+figure {
+  margin-right: 16px; }
+
 .icon {
   height: 50px;
   width: 50px; }
@@ -20,6 +23,9 @@ img {
 .spacer {
   width: 100%;
   height: 60px; }
+
+body {
+  overflow-x: hidden; }
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -244,9 +250,6 @@ footer {
   #navbar--mobile {
     display: block;
     position: fixed; } }
-@media screen and (max-height: 350px) {
-  .layout__right {
-    height: 120%; } }
 /* ==========================================================================
    General Styles
    ========================================================================== */
@@ -426,6 +429,19 @@ figcaption, .slide_caption {
   .content .section__reverse figcaption {
     width: 90%;
     background-color: gray; } }
+@media screen and (max-width: 450px) {
+  .content .subsection .subsection__description {
+    width: 100%; }
+  .content .content__midsection .midsection__description {
+    width: 100%; }
+  .content .threephoto, .content .threephoto * {
+    width: 90%; }
+
+  .layout__right .rightcontent {
+    width: 90%; } }
+@media screen and (max-height: 500px) {
+  .layout__right {
+    height: 120%; } }
 figcaption {
   width: 300px; }
 
@@ -441,5 +457,8 @@ figcaption {
     width: 90%; }
     figure * {
       width: 90%; } }
+@media screen and (max-width: 500px) {
+  .undercaption {
+    width: 100%; } }
 
 /*# sourceMappingURL=mobileplaylist.css.map */

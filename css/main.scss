@@ -7,6 +7,10 @@
 		object-fit: cover; 
 	}
 
+	figure{
+		margin-right: 16px;
+	}
+
 	.icon{
 		height: 50px;
 		width: 50px; 
@@ -24,6 +28,10 @@
     .spacer {
         width: 100%;
         height: 60px;
+    }
+
+    body{
+    	overflow-x: hidden;
     }
 
 /* ==========================================================================
@@ -351,9 +359,3 @@ footer{
 			position: fixed;
 		}
     }
-
-	@media screen and (max-height: $right_content_break){
-		.layout__right{
-			height: 120%; 	
-		}
-	}

@@ -290,3 +290,34 @@ $color-blue: #92ABBD;
 	        }
 	    }
 	}
+
+	@media screen and (max-width: 450px){
+		.content{
+			.subsection {
+				.subsection__description{
+					width: 100%; 
+				}
+			}
+			.content__midsection{
+				.midsection__description{
+					width: 100%; 
+				}
+			}
+
+			.threephoto, .threephoto *{
+	    		width: 	90%; 
+	    	}
+		}
+
+		.layout__right{
+			.rightcontent{
+				width: 90%; 
+			}
+		}
+	}
+
+	@media screen and (max-height: 500px){
+		.layout__right{
+			height: 120%; 	
+		}
+	}

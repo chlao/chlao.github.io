@@ -110,3 +110,13 @@ $color-gray: #4C4C4C;
         }
     } 
 }
+
+@media screen and (max-width: 450px){
+    .card{
+        width: 100%; 
+
+        img{
+            width: 95%; 
+        }
+    }
+}

@@ -5,8 +5,8 @@
     height: auto;
 }
 
-#infographic{
-	.graphic{
+#section__infographic{
+	.figure__img{
 		width: 275px; 
 	}
 
@@ -21,7 +21,16 @@
 }
 
 @media screen and (max-width: 900px){
-	#infographic figure{
-		margin-bottom: 0; 
+	#section__infographic {
+		.figure__img, figcaption{
+			width: 100%; 
+		}
+
+		figure{
+			margin-left: 0; 
+			margin-right: 0; 
+		}
 	}
+
+
 }
