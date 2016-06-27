@@ -8,7 +8,7 @@ function responsive(){
   if (mq880.matches){
     matched = true; 
 
-    $('button').on('click', function(e){
+    $('#navbar--mobile button').on('click', function(e){
       $('#navbar--mobile__links').slideToggle('slow'); 
     });
   }

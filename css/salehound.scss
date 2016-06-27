@@ -71,7 +71,6 @@ $color-gray: #4C4C4C;
     }
 }
 
-
 #midsection__ABtesting{
     .twophoto {
         margin: 0;  
@@ -95,6 +94,12 @@ $color-gray: #4C4C4C;
             margin-right: 15px; 
         }
     } 
+}
+
+@media screen and (max-width: 525px){
+    #subsection__results{
+        display: none; 
+    }
 }
 
 @media screen and (max-width: 450px){

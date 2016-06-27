@@ -3,7 +3,7 @@
 $color-blue: #92ABBD; 
 
 /* ==========================================================================
-   General Styles
+   Content Styles
    ========================================================================== */
 	figure{
 		display: inline-block; 
@@ -240,7 +240,7 @@ $color-blue: #92ABBD;
         	}
 
 	    	.twophoto, .twophoto *{
-	    		width: 90%; 
+	    		width: 100%; 
 	    	}    
 	    	.threephoto, .threephoto *{
 	    		width: 70%; 
@@ -281,12 +281,8 @@ $color-blue: #92ABBD;
 
 	            }
 	        }
-	    }
-	}
 
-	@media screen and (max-width: 450px){
-		.content{
-			.subsection {
+	        .subsection {
 				.subsection__description{
 					width: 100%; 
 				}
@@ -300,8 +296,10 @@ $color-blue: #92ABBD;
 			.threephoto, .threephoto *{
 	    		width: 	90%; 
 	    	}
-		}
+	    }
+	}
 
+	@media screen and (max-width: 450px){
 		.layout__right{
 			.rightcontent{
 				width: 90%; 
@@ -309,8 +307,8 @@ $color-blue: #92ABBD;
 		}
 	}
 
-	@media screen and (max-height: 500px){
+	@media screen and (max-height: 600px){
 		.layout__right{
-			height: 120%; 	
+			height: 130%; 	
 		}
 	}

@@ -24,7 +24,7 @@ figure {
   width: 100%;
   height: 60px; }
 
-body {
+html, body {
   overflow-x: hidden; }
 
 /* ==========================================================================
@@ -251,7 +251,7 @@ footer {
     display: block;
     position: fixed; } }
 /* ==========================================================================
-   General Styles
+   Content Styles
    ========================================================================== */
 figure {
   display: inline-block;
@@ -405,7 +405,7 @@ figcaption, .slide_caption {
   .content .project__content__img {
     width: 90%; }
   .content .twophoto, .content .twophoto * {
-    width: 90%; }
+    width: 100%; }
   .content .threephoto, .content .threephoto * {
     width: 70%; }
 
@@ -424,17 +424,16 @@ figcaption, .slide_caption {
 
   .content .section__reverse figcaption {
     width: 90%;
-    background-color: gray; } }
-@media screen and (max-width: 450px) {
+    background-color: gray; }
   .content .subsection .subsection__description {
     width: 100%; }
   .content .content__midsection .midsection__description {
     width: 100%; }
   .content .threephoto, .content .threephoto * {
-    width: 90%; }
-
+    width: 90%; } }
+@media screen and (max-width: 450px) {
   .layout__right .rightcontent {
     width: 90%; } }
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 600px) {
   .layout__right {
-    height: 120%; } }
+    height: 130%; } }
