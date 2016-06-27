@@ -363,13 +363,9 @@ figcaption, .slide_caption {
     .content .subsection .subsection__description {
       width: 70%; }
 
-.lazy {
-  width: 500px;
-  display: inline-block; }
-  .lazy img {
-    height: 550px;
-    margin: auto;
-    position: relative; }
+.main-carousel img {
+  height: 550px;
+  position: relative; }
 
 /* ==========================================================================
    Other Projects

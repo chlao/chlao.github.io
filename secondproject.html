@@ -12,14 +12,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/salehound.css">
 
-        <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
-
-        <!--<style> 
-            .caption, .slide_caption{
-                width: 490px;
-            }
-        </style> -->
+        <link rel="stylesheet" href="js/vendor/flickity.css" media="screen">
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -134,27 +127,29 @@
                         <p class="midsection__description"> We created two prototypes, based on how we would organize the sales information presented to the users. </p>
                     </header>
                     <div class="midsection__prototypes">
-                        <div class="lazy" id="storeprototype">
-                            <div><img alt="" data-lazy="img/Salehound/prototype1/prototype1.jpg"><div class="slide_caption"> Store-based </div></div>
-                            <div><img alt="" data-lazy="img/Salehound/prototype1/prototype2.jpg"></div>
-                            <div><img alt="" data-lazy="img/Salehound/prototype1/prototype3.jpg"></div>
-                            <div><img alt="" data-lazy="img/Salehound/prototype1/prototype4.jpg"></div>
-                            <div><img alt="" data-lazy="img/Salehound/prototype1/prototype5.jpg"></div>
-                            <div><img alt="" data-lazy="img/Salehound/prototype1/prototype6.jpg"></div>
-                            <div><img alt="" data-lazy="img/Salehound/prototype1/prototype7.jpg"></div>
-                            <div><img alt="" data-lazy="img/Salehound/prototype1/prototype8.jpg"></div>
+                        <h2> Stored-based </h2> 
+                        <div class="main-carousel" id="storeprototype">
+                            <div class="carousel-cell"><img alt="" src="img/Salehound/prototype1/prototype1.jpg"></div>
+                            <div class="carousel-cell"><img alt="" src="img/Salehound/prototype1/prototype2.jpg"></div>
+                            <div class="carousel-cell"><img alt="" src="img/Salehound/prototype1/prototype3.jpg"></div>
+                            <div class="carousel-cell"><img alt="" src="img/Salehound/prototype1/prototype4.jpg"></div>
+                            <div class="carousel-cell"><img alt="" src="img/Salehound/prototype1/prototype5.jpg"></div>
+                            <div class="carousel-cell"><img alt="" src="img/Salehound/prototype1/prototype6.jpg"></div>
+                            <div class="carousel-cell"><img alt="" src="img/Salehound/prototype1/prototype7.jpg"></div>
+                            <div class="carousel-cell"><img alt="" src="img/Salehound/prototype1/prototype8.jpg"></div>
                         </div>
                     </div>
                     <div class="midsection__prototypes">
-                        <div class="lazy" id="itemprototype">
-                            <div><img alt="" data-lazy="img/Salehound/prototype2/1.jpg"/><div class="slide_caption"> Item-based </div></div>
-                            <div><img alt="" data-lazy="img/Salehound/prototype2/2.jpg"/></div>
-                            <div><img alt="" data-lazy="img/Salehound/prototype2/3.jpg"/></div>
-                            <div><img alt="" data-lazy="img/Salehound/prototype2/4.jpg"/></div>
-                            <div><img alt="" data-lazy="img/Salehound/prototype2/5.jpg"/></div>
-                            <div><img alt="" data-lazy="img/Salehound/prototype2/6.jpg"/></div>
-                            <div><img alt="" data-lazy="img/Salehound/prototype2/7.jpg"/></div>
-                            <div><img alt="" data-lazy="img/Salehound/prototype2/8.jpg"/></div>
+                        <h2> Item-based </h2> 
+                        <div class="main-carousel" id="itemprototype">
+                            <div class="carousel-cell"><img alt="" src="img/Salehound/prototype2/1.jpg"/></div>
+                            <div class="carousel-cell"><img alt="" src="img/Salehound/prototype2/2.jpg"/></div>
+                            <div class="carousel-cell"><img alt="" src="img/Salehound/prototype2/3.jpg"/></div>
+                            <div class="carousel-cell"><img alt="" src="img/Salehound/prototype2/4.jpg"/></div>
+                            <div class="carousel-cell"><img alt="" src="img/Salehound/prototype2/5.jpg"/></div>
+                            <div class="carousel-cell"><img alt="" src="img/Salehound/prototype2/6.jpg"/></div>
+                            <div class="carousel-cell"><img alt="" src="img/Salehound/prototype2/7.jpg"/></div>
+                            <div class="carousel-cell"><img alt="" src="img/Salehound/prototype2/8.jpg"/></div>
                         </div>
                     </div> 
                 </div> 
@@ -314,14 +309,13 @@
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/project.js"></script>
-        <script type="text/javascript" src="js/slick/slick.min.js"></script>
+        <script src="js/vendor/flickity.pkgd.min.js"></script>
         <script> 
             $(document).ready(function(){
-                $('.lazy').slick({
-                  lazyLoad: 'ondemand',
-                  slidesToShow: 1,
-                  slidesToScroll: 1, 
-                  infinite: false           
+                $('.main-carousel').flickity({
+                  // options
+                  cellAlign: 'left',
+                  contain: true
                 });
             }); 
         </script> 

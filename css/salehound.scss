@@ -62,21 +62,7 @@ $color-gray: #4C4C4C;
 }
 
 .midsection__prototypes:first-of-type{
-    margin-right: 75px; 
-}
-
-.midsection__prototypes{
-    display: inline-block; 
-
-    .slide_caption {
-        left: 44px;
-        width: 412.5px;
-    }
-
-    #itemprototype .slide_caption{
-        width: 311px;
-        left: 94px;
-    }
+    margin-bottom: 75px; 
 }
 
 #midsection__heuristic{

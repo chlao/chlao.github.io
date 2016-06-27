@@ -363,13 +363,9 @@ figcaption, .slide_caption {
     .content .subsection .subsection__description {
       width: 70%; }
 
-.lazy {
-  width: 500px;
-  display: inline-block; }
-  .lazy img {
-    height: 550px;
-    margin: auto;
-    position: relative; }
+.main-carousel img {
+  height: 550px;
+  position: relative; }
 
 /* ==========================================================================
    Other Projects
@@ -480,16 +476,7 @@ figcaption, .slide_caption {
   border-right: 1px solid #4C4C4C; }
 
 .midsection__prototypes:first-of-type {
-  margin-right: 75px; }
-
-.midsection__prototypes {
-  display: inline-block; }
-  .midsection__prototypes .slide_caption {
-    left: 44px;
-    width: 412.5px; }
-  .midsection__prototypes #itemprototype .slide_caption {
-    width: 311px;
-    left: 94px; }
+  margin-bottom: 75px; }
 
 #midsection__heuristic ul {
   width: 60%; }

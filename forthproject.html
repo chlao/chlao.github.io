@@ -11,8 +11,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/project.css">
 
-        <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+        <link rel="stylesheet" href="js/vendor/flickity.css" media="screen">
 
         <style> 
             caption{
@@ -142,7 +141,7 @@
                         <h3 class="midsection__title"> Third Paper Draft </h3> 
                         <p class="midsection__description"> AFter revisting our problem space, we focused back on connections that we've already made once before from career fairs, mixers, etc. We wanted to make these connections meaningful by having users keep in contact and develop a relationship with each other. We decided to make an app based on the Dining With Professors program at UCSD. The Dining With Profesors program allows students to network and get to know their professors over a meal. We felt that the most personal connection you can get is meeting with someone in person, so created FollowUp, an app that allows you to import your LinkedIn connections and request meetups with those connections in order to develop a more meaningful connection. </p> 
                     </header> 
-                    <div class="midsection__prototypes">
+                    <!--<div class="midsection__prototypes">
                         <div class="lazy" id="mobileprototype">
                             <div><img alt="" data-lazy="img/FollowUp/prototype2/prototype1.JPG"></div>
                             <div><img alt="" data-lazy="img/FollowUp/prototype2/prototype2.JPG"></div>
@@ -156,6 +155,22 @@
                             <div><img alt="" data-lazy="img/FollowUp/prototype2/prototype10.JPG"></div>
                             <div><img alt="" data-lazy="img/FollowUp/prototype2/prototype11.JPG"></div>
                             <div><img alt="" data-lazy="img/FollowUp/prototype2/prototype12.JPG"></div>
+                        </div>
+                    </div>-->
+                    <div class="midsection__prototypes">
+                        <div class="main-carousel" id="mobileprototype">
+                            <div class="carousel-cell"><img alt="" src="img/FollowUp/prototype2/prototype1.JPG"></div>
+                            <div class="carousel-cell"><img alt="" src="img/FollowUp/prototype2/prototype2.JPG"></div>
+                            <div class="carousel-cell"><img alt="" src="img/FollowUp/prototype2/prototype3.JPG"></div>
+                            <div class="carousel-cell"><img alt="" src="img/FollowUp/prototype2/prototype4.JPG"></div>
+                            <div class="carousel-cell"><img alt="" src="img/FollowUp/prototype2/prototype5.JPG"></div>
+                            <div class="carousel-cell"><img alt="" src="img/FollowUp/prototype2/prototype6.JPG"></div>
+                            <div class="carousel-cell"><img alt="" src="img/FollowUp/prototype2/prototype7.JPG"></div>
+                            <div class="carousel-cell"><img alt="" src="img/FollowUp/prototype2/prototype8.JPG"></div>
+                            <div class="carousel-cell"><img alt="" src="img/FollowUp/prototype2/prototype9.JPG"></div>
+                            <div class="carousel-cell"><img alt="" src="img/FollowUp/prototype2/prototype10.JPG"></div>
+                            <div class="carousel-cell"><img alt="" src="img/FollowUp/prototype2/prototype11.JPG"></div>
+                            <div class="carousel-cell"><img alt="" src="img/FollowUp/prototype2/prototype12.JPG"></div>
                         </div>
                     </div>
                 </div>  
@@ -240,14 +255,13 @@
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/project.js"></script>
-        <script type="text/javascript" src="js/slick/slick.min.js"></script>
+        <script src="js/vendor/flickity.pkgd.min.js"></script>
         <script> 
             $(document).ready(function(){
-                $('.lazy').slick({
-                  lazyLoad: 'ondemand',
-                  slidesToShow: 1,
-                  slidesToScroll: 1, 
-                  infinite: false           
+                $('.main-carousel').flickity({
+                  // options
+                  cellAlign: 'left',
+                  contain: true
                 });
             }); 
         </script> 
