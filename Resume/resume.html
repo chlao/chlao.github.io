@@ -14,21 +14,44 @@
     </head>
 
     <body>
-        <ul class="navbar" id="hiddennav"> 
-            <li><a href="../index.html"><img src="../img/Dog%20Rear.png" alt="" class="icon"></a></li>
-            <li><a href="../index.html"> Home </a></li> 
-            <li><a href="../index.html#content"> Projects </a></li> 
-            <li><a href="Resume/resume.html"> Resume </a></li>
+    	<ul class="navbar navbar--fill" id="navbar--hidden"> 
+            <li class="navbar__menuitem">
+                <a class="navbar__link" href="index.html">
+                    <img src="../img/Dog%20Rear.png" alt="" class="icon navbar__icon">
+                </a>
+            </li>
+            <li class="navbar__menuitem">
+                <a class="navbar__link" href="index.html"> Home </a>
+            </li> 
+            <li class="navbar__menuitem">
+                <a class="navbar__link" href="index.html#content"> Projects </a>
+            </li> 
+            <li class="navbar__menuitem">
+                <a class="navbar__link" href="#"> Resume </a>
+            </li>
         </ul> 
-        <ul class="navbar" id="mobilenav"> 
-            <li><a href="../index.html"><img src="../img/Dog%20Rear.png" alt="" class="icon"></a></li>
-            <li id="menuicon"><button class="icon">&nbsp;</button></li>
-            <ul id="mobilelinks"> 
-                <li><a href="../index.html"> Home </a></li> 
-                <li><a href="../index.html#content"> Projects </a></li> 
-                <li><a href="Resume/resume.html"> Resume </a></li>
+        <ul class="navbar" id="navbar--mobile"> 
+            <li class="navbar__menuitem">
+                <a class="navbar__link" href="index.html">
+                    <img src="../img/Dog%20Rear.png" alt="" class="icon">
+                </a>
+            </li>
+            <li class="navbar__menuitem" id="navbar--mobile__menuicon">
+                <button class="icon">&nbsp;</button>
+            </li>
+            <ul class="navbar" id="navbar--mobile__links"> 
+                <li class="navbar__menuitem">
+                    <a class="navbar__link" href="index.html"> Home </a>
+                </li> 
+                <li class="navbar__menuitem">
+                    <a class="navbar__link" href="index.html#content"> Projects </a>
+                </li> 
+                <li class="navbar__menuitem">
+                    <a class="navbar__link" href="#"> Resume </a>
+                </li>
             </ul>
         </ul> 
+
         <div class="spacer">
 		    &nbsp;
 		</div>
@@ -57,7 +80,7 @@
 				    	<ul> 
 				    		<li> Created a web application that organizes retail store sales based on subscription, in a team of three</li> 
 				    		<li> Applied principles for designing, implementing, and evaluating user interfaces including the use of storyboards, prototyping, and A/B testing to our own projects </li> 
-				    		<li> Utilized classroom-learned skills in  <strong>HTML</strong>, <strong>CSS</strong>, <strong>Javascript</strong>, <strong>AJAX</strong>, <strong>jQuery</strong>, <strong>git</strong>, node.js, and JSON to implement the design and functionality of the web application </li> 
+				    		<li> Utilized classroom-learned skills in <strong>HTML</strong>, <strong>CSS</strong>, <strong>Javascript</strong>, <strong>AJAX</strong>, <strong>jQuery</strong>, <strong>git</strong>, node.js, and JSON to implement the design and functionality of the web application </li> 
 				    	</ul> 
 				    	<h3> Web Client Languages </h3> 
 				    	<ul> 
@@ -71,7 +94,7 @@
 				    </div> 
 			    	<h2> ACTIVITIES AND INTERESTS <img src="activities.png"> </h2> 
 			    	<div class="block"> 
-			    		<p class="date"> Jan 2016 - June 2016 </p> 
+			    		<p class="date"> April 2016 - June 2016 </p> 
 			    		<h3> Artist </h3> 
 			    		<h4> Recycool </h4> 
 			    		<ul> 
@@ -159,11 +182,12 @@
 			    </div>
 			</div>
 		</div>
-		<footer class="footer">
-            <h2> Christine Lao </h2>
-            <div class="contact"> 
-                <h2> Contact Me </h2>
-                <p> christy_11_12@yahoo.com </p> 
+
+		<footer>
+            <h2 class="footer__title" id="footer__name"> Christine Lao </h2>
+            <div class="footer__contact"> 
+                <h2 class="footer__title" id="contact__title"> Contact Me </h2>
+                <p id="contact__email"> christy_11_12@yahoo.com </p> 
                 <a href="https://www.linkedin.com/in/christinelao3o" target="_blank"><img src="../img/linkedin.png" class="icon smmarginr"></a>
                 <a href="https://github.com/chlao" target="_blank"><img src="../img/GitHub.png" class="icon"></a>
             </div> 
