@@ -4,13 +4,14 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Christine Lao - Home</title>
-        <meta name="description" content="Hi, my name is Christine Lao. I'm an aspiring software engineer and UX/UI designer.">
+        <meta name="description" content="Hi, my name is Christine Lao. I'm an aspiring front-end developer and UX/UI designer.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="js/vendor/flickity.css" media="screen">
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script> 
     </head>
@@ -58,7 +59,7 @@
         <div class="layout__left home">
             <img src="img/Husky.png" id="graphic">
             <h1 id="name"> Christine Lao </h1>
-            <p id="headline"> Aspiring software engineer <br>and UX/UI Designer</p>
+            <p id="headline"> Aspiring Front-end developer <br>and UX/UI Designer</p>
             <ul class="navbar navbar--fill" id="navbar--onpage"> 
                 <li class="navbar__menuitem">
                     <a class="navbar__link" href="#">
@@ -79,7 +80,7 @@
         <div class="layout__right">
             <div class="rightcontent">
                 <h2 class="title"> - About - </h2>
-                <p> Hi, my name is Christine. <br>I recently graduated with a degree in computer engineering from UC San Diego. I'm a curious, hard-working student striving to become a software engineer and UX/UI designer. I combine technology and design to create something both beautiful and user-friendly. </p> 
+                <p> Hi, my name is Christine. <br>I recently graduated with a degree in computer engineering from UC San Diego. I'm a curious, hard-working student striving to become a front-end developer and UX/UI designer. I combine technology and design to create something both beautiful and user-friendly. </p> 
                 <p><strong> Current status:</strong> Looking for an full-time position or internship </p> 
                 <p> You can contact me through e-mail at: </a> 
                 <p> christy_11_12@yahoo.com </p> 
@@ -137,6 +138,20 @@
                     </a>
                 </div> 
             </div> 
+
+            <h2 class="title"> Artwork </h2> 
+            <h3> Recycool </h3> 
+            <p><a href="http://cse125.ucsd.edu/recycool/">http://cse125.ucsd.edu/recycool/</a></p> 
+            <div class="container__artwork"> 
+                <div class=""> </div> 
+                <div class="main-carousel">
+                    <div class="carousel-cell"><img class="artwork__image" alt="" src="img/Recycool/SaveTheAnimals.png"></div>
+                    <div class="carousel-cell"><img class="artwork__image" alt="" src="img/Recycool/Forrest - Full.png"></div>
+                    <div class="carousel-cell"><img class="artwork__image" alt="" src="img/Recycool/Tree Character - Edited.png"></div>
+                    <div class="carousel-cell"><img class="artwork__image" alt="" src="img/Recycool/Dog---Sad---Animation-2.gif"></div>
+                    <div class="carousel-cell"><img class="artwork__image" alt="" src="img/Recycool/Dog---Happy---Animation.gif"></div>
+                </div>
+            </div> 
         </div>
         
         <footer>
@@ -149,7 +164,18 @@
             </div> 
         </footer>
 
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/home.js"></script>
+        <script src="js/vendor/flickity.pkgd.min.js"></script>
+        <script> 
+            $(document).ready(function(){
+                $('.main-carousel').flickity({
+                  // options
+                  cellAlign: 'left',
+                  contain: true
+                });
+            }); 
+        </script> 
     </body>
 </html>

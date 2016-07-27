@@ -319,6 +319,9 @@ footer {
 .overlay .tertiaryproj__text p {
   font-size: 22px; }
 
+.container__artwork .artwork__image {
+  height: 600px; }
+
 /* ==========================================================================
    Media Queries 
    ========================================================================== */
