@@ -88,18 +88,22 @@ body * {
   background-color: #92ABBD;
   clear: both; }
 
+[class^="layout__"] {
+  display: flex;
+  justify-content: center; }
+  [class^="layout__"] [class$="content"] {
+    align-self: center; }
+
 .layout__left {
   float: left;
-  position: relative; }
+  position: relative;
+  flex-direction: column; }
 
 .layout__right {
   float: right;
-  background-color: gray;
-  display: flex;
-  justify-content: center; }
+  background-color: gray; }
   .layout__right .rightcontent {
-    width: 60%;
-    align-self: center; }
+    width: 60%; }
 
 /* ==========================================================================
    Projects Menu
@@ -254,19 +258,16 @@ footer {
   background-size: cover;
   background-position: 100% 150%; }
   .layout__left #graphic {
-    width: 400px;
-    padding-top: 15%; }
+    width: 62.5%; }
   .layout__left #name {
     font-size: 52px;
-    font-family: 'Muli', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    /*font-family: 'Montserrat', sans-serif;
-    font-weight: normal;*/ }
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal; }
   .layout__left #headline {
-    width: 60%;
-    margin: auto;
-    font-size: 20px; }
+    font-size: 20px;
+    margin: 0; }
 
 /* ==========================================================================
    Navigation Menu
@@ -340,9 +341,6 @@ footer {
     .content #content__projectmenu .tertiaryproj .project__img {
       position: static; } }
 @media screen and (max-width: 700px) {
-  .layout__left #graphic {
-    width: 300px; }
-
   .content {
     padding-bottom: 5px; }
     .content #content__projectmenu {
@@ -356,6 +354,9 @@ footer {
           width: 410px;
           height: 310px; } }
 @media screen and (max-width: 450px) {
+  .layout__right .rightcontent {
+    width: 85%; }
+
   .content #content__projectmenu {
     width: 300px;
     padding-left: 0; }
@@ -368,17 +369,10 @@ footer {
 
   .layout__left #name {
     font-size: 32px; } }
-@media screen and (max-height: 700px) {
-  .layout__left {
-    height: 100%;
-    padding-bottom: 25%; }
-    .layout__left #graphic {
-      padding-top: 25%; }
-
+@media screen and (max-height: 600px) {
   .layout__right {
-    height: 100%; } }
+    height: auto;
+    padding: 20px 0; } }
 @media screen and (max-width: 700px) {
   .title {
     font-size: 28px; } }
-
-/*# sourceMappingURL=index.css.map */

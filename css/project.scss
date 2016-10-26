@@ -27,12 +27,6 @@ $color-blue: #92ABBD;
 	    text-align: center;
 	}
 
-	.helper{
-	    height: 100%;
-	    vertical-align: middle;
-	    display: inline-block;
-	}
-
 	#navbar--hidden{
 		display: block;
 	    position: fixed;
@@ -41,6 +35,10 @@ $color-blue: #92ABBD;
 
 	.layout__left{
 		background-color: black; 
+
+		[class^="projectpage__img"]{
+			align-self: center; 
+		}
 
 		.projectpage__img--mobile{
 		    height: 80%;

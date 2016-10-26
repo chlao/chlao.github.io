@@ -13,23 +13,20 @@
 	    background-position: 100% 150%;
 
 	    #graphic{
-			width: 400px;
-	    	padding-top: 15%;
+	    	width: 62.5%; 
 	    }
 
 	    #name{
 	   		font-size: 52px; 
-	        font-family: 'Muli', sans-serif;
 	        text-transform: uppercase;
 	        letter-spacing: 0.1em; 
-	        /*font-family: 'Montserrat', sans-serif;
-	        font-weight: normal;*/
+	        font-family: 'Montserrat', sans-serif;
+	        font-weight: normal;
 	    }
 
 		#headline{
-			width: 60%;
-	        margin: auto;
-	        font-size: 20px;
+			font-size: 20px;
+			margin: 0;
 		}
 	}
 
@@ -159,10 +156,6 @@
         }
     }
     @media screen and (max-width: $project_menu_break_medium){
-        .layout__left #graphic{
-            width: 300px;
-        }
-
        	.content {
        		padding-bottom: 5px; 
 
@@ -187,6 +180,10 @@
     }
 
     @media screen and (max-width: $project_menu_break_small){
+    	.layout__right .rightcontent{
+    		width: 85%; 
+    	}
+
     	.content #content__projectmenu{
     		width: 300px;
             padding-left: 0;
@@ -208,20 +205,12 @@
             font-size: 32px;
     	}
     }
-    
-    @media screen and (max-height: $project_menu_break_medium){
-    	.layout__left{
-    		height: 100%; 
-    		padding-bottom: 25%; 
 
-	    	#graphic{
-	    		padding-top: 25%; 
-	    	}
+    @media screen and (max-height: 600px){
+    	.layout__right{
+    		height: auto;
+    		padding: 20px 0; 
     	}
-
-        .layout__right{
-            height: 100%; 
-        }
     }
 
     @media screen and (max-width: $title_size_reduce){

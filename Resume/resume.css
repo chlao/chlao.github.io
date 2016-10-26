@@ -88,18 +88,22 @@ body * {
   background-color: #92ABBD;
   clear: both; }
 
+[class^="layout__"] {
+  display: flex;
+  justify-content: center; }
+  [class^="layout__"] [class$="content"] {
+    align-self: center; }
+
 .layout__left {
   float: left;
-  position: relative; }
+  position: relative;
+  flex-direction: column; }
 
 .layout__right {
   float: right;
-  background-color: gray;
-  display: flex;
-  justify-content: center; }
+  background-color: gray; }
   .layout__right .rightcontent {
-    width: 60%;
-    align-self: center; }
+    width: 60%; }
 
 /* ==========================================================================
    Projects Menu
@@ -356,13 +360,13 @@ img {
 
 #skills p {
   border-radius: 50%;
-  height: 150px;
-  width: 150px;
-  line-height: 150px;
+  height: 110px;
+  width: 110px;
+  line-height: 110px;
   text-align: center;
   color: white;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 21px;
   background-color: #959595;
   display: inline-block;
   margin-right: 10.5px; }
@@ -372,15 +376,14 @@ img {
 
 #left {
   float: left;
-  width: 48%;
+  width: 45%;
   border-right: 5px dashed white;
-  padding-right: 26px; }
+  padding-right: 60px; }
 
 #right {
-  padding-left: 22px;
   margin-left: 0px;
   float: right;
-  width: 48%; }
+  width: 45%; }
 
 /* Clearfix hack - to prevent from overflowing over column */
 .container:before, .container:after {
@@ -406,10 +409,10 @@ img {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media (max-width: 1700px) {
+@media (max-width: 1300px) {
   h3, h4 {
     line-height: 100%; } }
-@media (max-width: 1700px) {
+@media (max-width: 1300px) {
   #left, #right {
     width: 100%;
     border-style: none; }
@@ -420,7 +423,7 @@ img {
   #contact p {
     text-align: center; } }
 /* Skills (Resume) break down */
-@media (max-width: 1310px) {
+@media (max-width: 1300px) {
   #skills_title img, #skills_title h2 {
     display: inline-block; }
 

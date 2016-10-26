@@ -88,18 +88,22 @@ body * {
   background-color: #92ABBD;
   clear: both; }
 
+[class^="layout__"] {
+  display: flex;
+  justify-content: center; }
+  [class^="layout__"] [class$="content"] {
+    align-self: center; }
+
 .layout__left {
   float: left;
-  position: relative; }
+  position: relative;
+  flex-direction: column; }
 
 .layout__right {
   float: right;
-  background-color: gray;
-  display: flex;
-  justify-content: center; }
+  background-color: gray; }
   .layout__right .rightcontent {
-    width: 60%;
-    align-self: center; }
+    width: 60%; }
 
 /* ==========================================================================
    Projects Menu
@@ -267,11 +271,6 @@ figcaption, .slide_caption {
   z-index: 2;
   text-align: center; }
 
-.helper {
-  height: 100%;
-  vertical-align: middle;
-  display: inline-block; }
-
 #navbar--hidden {
   display: block;
   position: fixed;
@@ -279,6 +278,8 @@ figcaption, .slide_caption {
 
 .layout__left {
   background-color: black; }
+  .layout__left [class^="projectpage__img"] {
+    align-self: center; }
   .layout__left .projectpage__img--mobile {
     height: 80%;
     width: auto; }
