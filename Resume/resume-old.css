@@ -259,7 +259,7 @@ footer {
   font-family: 'BiteBullet';
   src: url("Bite_Bullet.ttf") format("truetype"); }
 body {
-  background: white;
+  background: #92ABBD;
   padding: 0;
   margin: 0; }
 
@@ -342,8 +342,9 @@ li {
   font-size: 1.25em; }
 
 img {
-  margin: 10% auto;
-  width: 100%; }
+  display: inline-block;
+  width: 60px;
+  height: auto; }
 
 #skills_container {
   margin-left: 3%;
@@ -426,6 +427,19 @@ img {
 
   #contact p {
     text-align: center; } }
+/* Skills (Resume) break down */
+@media (max-width: 1300px) {
+  #skills_title img, #skills_title h2 {
+    display: inline-block; }
+
+  #skills_title {
+    width: auto;
+    height: 100px;
+    margin-bottom: 0; }
+
+  #skills {
+    float: left;
+    width: 100%; } }
 /* Resume Header break down */
 @media (max-width: 750px) {
   .heading > .contact {
@@ -439,4 +453,4 @@ img {
   .heading > .contact {
     margin: 15px auto; } }
 
-/*# sourceMappingURL=resume.css.map */
+/*# sourceMappingURL=resume-old.css.map */
