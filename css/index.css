@@ -270,6 +270,12 @@ footer {
     margin: 0; }
 
 /* ==========================================================================
+   Right Layout 
+   ========================================================================== */
+.currentstatus {
+  font-weight: bold; }
+
+/* ==========================================================================
    Navigation Menu
    ========================================================================== */
 #navbar--onpage {
@@ -284,6 +290,8 @@ footer {
   padding: 75px 0;
   background-color: #92ABBD;
   clear: both; }
+  .content .projects-info {
+    text-align: center; }
   .content #content__projectmenu {
     margin: 0 auto;
     margin-bottom: 150px;
