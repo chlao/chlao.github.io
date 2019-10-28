@@ -1,0 +1,4 @@
+@mixin vertically-centered-absolute-positioning {
+  top: 50%;
+  transform: translateY(-50%);
+}
