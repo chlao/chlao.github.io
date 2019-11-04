@@ -1,4 +1,5 @@
 @import "header-variables";
+@import "variables";
 @import "mixins";
 
 header {
@@ -12,24 +13,35 @@ header {
   &__logo {
     position: absolute;
     bottom: 0;
-    margin-left: 60px;
+    margin-left: $sceen-margin;
     @include vertically-centered-absolute-positioning;
   }
 }
 
 .nav-menu {
-  text-align: center;
+  text-align: right;
 
   &__link {
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     color: #666;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: normal;
 
     display: inline-block;
-    margin: $header-vertical-margin 80px;
+    margin: $header-vertical-margin 70px;
     line-height: 1;
+
+    &:last-child {
+      margin-right: $sceen-margin;
+    }
+
+    $header-horizontal-margin-lg: 42px;
+
+    @media #{$lg} {
+      margin-left: $header-horizontal-margin-lg;
+      margin-right: $header-horizontal-margin-lg;
+    }
   }
 }
