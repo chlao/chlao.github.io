@@ -1,0 +1,19 @@
+$screen-breakpoints: (
+  sm: 480px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+@function screen-breakpoint($size) {
+    @return map-get($screen-breakpoints, $size);
+}
+
+// Small devices (landscape phones, 576px and up)
+$sm: "only screen and (max-width: #{screen-breakpoint("sm")})";
+// Medium devices (tablets, 768px and up)
+$md: "only screen and (max-width:  #{screen-breakpoint("md")})";
+// Large devices (desktops, 992px and up)
+$lg: "only screen and (max-width: #{screen-breakpoint("lg")})";
+// Extra large devices (large desktops, 1200px and up)
+$xl: "only screen and (max-width: #{screen-breakpoint("xl")})";
