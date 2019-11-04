@@ -2,22 +2,22 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-const NavHeading = ({ heading }) => (
+const NavMenuItem = ({ menuItem }) => (
   <Link
-    to={heading.href}
+    to={menuItem.link}
     className="nav-menu__link"
     >
-    {heading.title}
+    {menuItem.heading}
   </Link>
 )
 
-NavHeading.propTypes = {
+NavMenuItem.propTypes = {
   heading: PropTypes.string,
 }
 
 // TODO: This should not exist if empty? Although, it shouldn't ever be empty
-NavHeading.defaultProps = {
+NavMenuItem.defaultProps = {
   heading: ``,
 }
 
-export default NavHeading
+export default NavMenuItem
