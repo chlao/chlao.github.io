@@ -26,13 +26,14 @@ header {
     bottom: 0;
     margin-left: $sceen-margin;
     @include vertically-centered-absolute-positioning;
-    @include hidden-md;
+    @include hidden-md-down;
   }
 
   &__icon-menu {
     display: block;
     text-align: center;
     margin-top: 20px;
+    @include visible-md-down;
   }
 }
 
@@ -42,6 +43,8 @@ header {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
+
+  @include visible-md-down;
 
   &__text {
     @include sideways-vertical-text;
@@ -65,6 +68,7 @@ header {
   text-align: center;
   color: black;
   margin-bottom: 30px;
+  @include visible-md-down;
 
   &__link {
     display: block;
@@ -82,7 +86,7 @@ header {
 
 .nav-menu {
   text-align: right;
-  @include hidden-md;
+  @include hidden-md-down;
 
   &__link {
     font-size: 12px;

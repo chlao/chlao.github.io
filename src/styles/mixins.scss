@@ -34,8 +34,14 @@
   text-orientation: $text-orientation;
 }
 
-@mixin hidden-md {
+@mixin hidden-md-down {
   @media #{$md} {
+    display: none;
+  }
+}
+
+@mixin visible-md-down {
+  @media #{$md-up} {
     display: none;
   }
 }
