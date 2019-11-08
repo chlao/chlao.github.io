@@ -1,5 +1,10 @@
 @import "src/components/header/header-variables";
+@import "variables";
 
 .content {
+  // Move the content over the height/width of the header 
   margin-top: $header-height;
+  @media #{$md} {
+    margin: 0 0 0 $header-width-xs;
+  }
 }
