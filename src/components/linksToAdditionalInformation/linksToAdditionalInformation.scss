@@ -1,0 +1,21 @@
+@import "mixins";
+
+.links-to-additional-information {
+  text-align: center;
+  color: black;
+  margin-bottom: 30px;
+  @include visible-md-down;
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    margin-top: 18px;
+    color: black;
+
+    &--resume {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 10px;
+    }
+  }
+}

@@ -37,53 +37,6 @@ header {
   }
 }
 
-.left-sidebar {
-  flex: 1 0 auto;
-
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-
-  @include visible-md-down;
-
-  &__text {
-    @include sideways-vertical-text;
-    // Horizontally center the text
-    line-height: $header-width-xs;
-
-    font-size: 14px;
-    margin-bottom: 0;
-
-    &--name {
-      text-transform: uppercase;
-    }
-
-    &--email {
-      margin-top: 58px;
-    }
-  }
-}
-
-.links-to-additional-information {
-  text-align: center;
-  color: black;
-  margin-bottom: 30px;
-  @include visible-md-down;
-
-  &__link {
-    display: block;
-    text-decoration: none;
-    margin-top: 18px;
-    color: black;
-
-    &--resume {
-      text-transform: uppercase;
-      text-decoration: none;
-      font-size: 10px;
-    }
-  }
-}
-
 .nav-menu {
   text-align: right;
   @include hidden-md-down;
