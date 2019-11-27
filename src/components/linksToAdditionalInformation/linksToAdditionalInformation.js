@@ -2,9 +2,9 @@ import React from "react"
 
 import "./linksToAdditionalInformation.scss"
 
-const LinksToAdditionalInformation = () => {
+const LinksToAdditionalInformation = ({ headerOpenState }) => {
   return (
-    <div className="links-to-additional-information">
+    <div className={`links-to-additional-information${headerOpenState ? " links-to-additional-information--open" : ""}`}>
       <a href="" className="links-to-additional-information__link links-to-additional-information__link--email">
         <span className="icon-envelope-o"></span>
       </a>

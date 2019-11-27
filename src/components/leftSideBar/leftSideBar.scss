@@ -26,4 +26,10 @@
       margin-top: 58px;
     }
   }
+
+  @media #{$md} {
+    &--open {
+      display: none;
+    }
+  }
 }

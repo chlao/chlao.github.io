@@ -2,11 +2,11 @@ import React from "react"
 
 import "./leftSideBar.scss"
 
-const LeftSideBar = () => {
+const LeftSideBar = ({ headerOpenState }) => {
   return (
-    <div class="left-sidebar">
-      <p class="left-sidebar__text left-sidebar__text--name">Christine Lao</p>
-      <p class="left-sidebar__text left-sidebar__text--email">christinelao3o@gmail.com</p>
+    <div className={`left-sidebar${headerOpenState ? " left-sidebar--open" : ""}`}>
+      <p className="left-sidebar__text left-sidebar__text--name">Christine Lao</p>
+      <p className="left-sidebar__text left-sidebar__text--email">christinelao3o@gmail.com</p>
     </div>
   )
 }

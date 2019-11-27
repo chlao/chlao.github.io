@@ -35,6 +35,11 @@ header {
     margin-top: 20px;
     @include visible-md-down;
   }
+
+  &--open {
+    // The menu width should be set by its content
+    width: auto;
+  }
 }
 
 .nav-menu {
@@ -60,6 +65,17 @@ header {
     @media #{$lg} {
       margin-left: $header-horizontal-margin-lg;
       margin-right: $header-horizontal-margin-lg;
+    }
+  }
+
+  &--open {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: left;
+
+    @at-root #{&} .nav-menu__link {
+      display: block;
     }
   }
 }
