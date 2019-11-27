@@ -36,46 +36,10 @@ header {
     @include visible-md-down;
   }
 
-  &--open {
-    // The menu width should be set by its content
-    width: auto;
-  }
-}
-
-.nav-menu {
-  text-align: right;
-  @include hidden-md-down;
-
-  &__link {
-    font-size: 12px;
-    color: #666;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: normal;
-
-    display: inline-block;
-    margin: $header-vertical-margin 70px;
-    line-height: 1;
-
-    &:last-child {
-      margin-right: $sceen-margin;
+  @media #{$md} {
+    &--open {
+        // The menu width should be set by its content
+        width: auto;
+      }
     }
-
-    $header-horizontal-margin-lg: 42px;
-    @media #{$lg} {
-      margin-left: $header-horizontal-margin-lg;
-      margin-right: $header-horizontal-margin-lg;
-    }
-  }
-
-  &--open {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    text-align: left;
-
-    @at-root #{&} .nav-menu__link {
-      display: block;
-    }
-  }
 }
