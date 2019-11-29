@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header  from "./header/header"
+import LeftSideBar  from "./leftSideBar/leftSideBar"
 import "./layout.scss"
 
 import "../styles/global.scss"
@@ -29,8 +30,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        className="content">
+      <LeftSideBar isDesktop={true}/>
+      <div className="content">
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with

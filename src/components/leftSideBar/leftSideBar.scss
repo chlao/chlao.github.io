@@ -1,21 +1,14 @@
 @import "src/components/header/header-variables";
 @import "mixins";
 
+$left-sidebar-text-font-size: 14px;
+$left-sidebar-screen-content-margin: 10px;
+
 .left-sidebar {
-  flex: 1 0 auto;
-
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-
-  @include visible-md-down;
-
   &__text {
     @include sideways-vertical-text;
-    // Horizontally center the text
-    line-height: $header-width-xs;
 
-    font-size: 14px;
+    font-size: $left-sidebar-text-font-size;
     margin-bottom: 0;
 
     &--name {
@@ -27,8 +20,35 @@
     }
   }
 
-  @media #{$md} {
-    &--open {
+  &--lg {
+    position: fixed;
+    @include vertically-centered-absolute-positioning;
+    margin-left: $sceen-margin - $left-sidebar-text-font-size - $left-sidebar-screen-content-margin;
+
+    // Reset the line-height to match the font-size so that the margin between
+    // the content and the left side bar is easily calculated.
+    @at-root #{&} .left-sidebar__text {
+      line-height: 1;
+    }
+
+    @include hidden-md-down;
+  }
+
+  &--md {
+    flex: 1 0 auto;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+
+    @include visible-md-down;
+
+    @at-root #{&} .left-sidebar__text {
+      // Horizontally center the text
+      line-height: $header-width-xs;
+    }
+
+    &-open {
       display: none;
     }
   }
