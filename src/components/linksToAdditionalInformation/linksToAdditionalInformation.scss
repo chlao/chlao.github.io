@@ -4,7 +4,6 @@
   text-align: center;
   color: black;
   margin-bottom: 30px;
-  @include visible-md-down;
 
   &__link {
     display: block;
@@ -19,7 +18,17 @@
     }
   }
 
-  @media #{$md} {
+  &--lg {
+    @include hidden-md-down;
+    display: inline-block;
+    position: fixed;
+    @include vertically-centered-absolute-positioning;
+    right: $sidebar-screen-margin;
+
+  }
+
+  &--md {
+    @include visible-md-down;
     &--open {
       // Align this flex child to the end
       margin-top: auto;

@@ -34,6 +34,7 @@ $header-width-xs: 58px;
 /* left sidebar */
 $left-sidebar-text-font-size: 14px;
 $left-sidebar-screen-content-margin: 10px;
+$sidebar-screen-margin: $sceen-margin - $left-sidebar-text-font-size - $left-sidebar-screen-content-margin;
 
 /* nav menu */
 $nav-menu-link-horizontal-margin-lg: 42px;

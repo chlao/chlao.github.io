@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header  from "./header/header"
 import LeftSideBar  from "./leftSideBar/leftSideBar"
+import LinksToAdditionalInformation  from "./linksToAdditionalInformation/linksToAdditionalInformation"
 import "./layout.scss"
 
 import "../styles/global.scss"
@@ -31,6 +32,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <LeftSideBar isDesktop={true}/>
+      <LinksToAdditionalInformation isDesktop={true} />
       <div className="content">
         <main>{children}</main>
         <footer>
