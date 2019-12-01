@@ -1,15 +1,17 @@
+@import "variables";
 @import "mixins";
 
 .links-to-additional-information {
   text-align: center;
-  color: black;
+  color: $background-text-color;
   margin-bottom: 30px;
+  font-family: 'Open Sans', sans-serif;
 
   &__link {
     display: block;
     text-decoration: none;
     margin-top: 18px;
-    color: black;
+    color: $background-text-color;
 
     &--resume {
       text-transform: uppercase;
@@ -24,7 +26,6 @@
     position: fixed;
     @include vertically-centered-absolute-positioning;
     right: $sidebar-screen-margin;
-
   }
 
   &--md {
