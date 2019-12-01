@@ -1,0 +1,33 @@
+@import "variables";
+
+.home {
+  margin: 0 auto;
+  max-width: 560px;
+
+  // Center within the space below the header, but above the fold
+  position: relative;
+  top: 50%;
+  transform: translateY(calc(50% - #{$header-height/2}));
+
+  &__overline, &__underline {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 54px;
+  }
+
+  &__heading {
+    font-family: 'Merriweather', serif;
+    font-size: 64px;
+    font-weight: normal;
+    color: $secondary-color;
+    margin-bottom: 48px;
+  }
+
+  &__subheading {
+    font-family: 'Merriweather', serif;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 54px;
+  }
+}
