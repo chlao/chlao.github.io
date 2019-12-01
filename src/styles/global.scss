@@ -1,9 +1,10 @@
 @import "variables";
+@import "mixins";
 
 .content {
   // Move the content over the height/width of the header 
   margin-top: $header-height;
   @media #{$md} {
-    margin: 0 0 0 $header-width-xs;
+    margin: 0 40px 0 #{$header-width-xs + 40px};
   }
 }

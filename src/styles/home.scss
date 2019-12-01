@@ -1,19 +1,41 @@
 @import "variables";
+@import "mixins";
 
 .home {
-  margin: 0 auto;
-  max-width: 560px;
+  // Center the home content relative to the viewport height and header height
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - #{$header-height});
 
-  // Center within the space below the header, but above the fold
-  position: relative;
-  top: 50%;
-  transform: translateY(calc(50% - #{$header-height/2}));
+  // There's no header at the top to compensate for on mobile
+  @media #{$md} {
+    height: 100vh;
+  }
+
+  &__inner {
+    max-width: 560px;
+  }
+
+  $line-font-size: 14px;
 
   &__overline, &__underline {
     font-size: 14px;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 54px;
+
+    @media #{$md} {
+      font-size: 12px;
+    }
+
+    @media #{$sm} {
+      font-size: 10px;
+    }
+  }
+
+  &__underline {
+    margin-bottom: 0;
   }
 
   &__heading {
@@ -22,6 +44,15 @@
     font-weight: normal;
     color: $secondary-color;
     margin-bottom: 48px;
+
+    @media #{$md} {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    @media #{$sm} {
+      font-size: 30px;
+    }
   }
 
   &__subheading {
@@ -29,5 +60,13 @@
     font-size: 22px;
     font-weight: 300;
     margin-bottom: 54px;
+
+    @media #{$md} {
+      font-size: 24px;
+    }
+
+    @media #{$sm} {
+      font-size: 16px;
+    }
   }
 }
