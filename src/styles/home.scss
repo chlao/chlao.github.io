@@ -2,15 +2,23 @@
 @import "mixins";
 
 .home {
-  // Center the home content relative to the viewport height and header height
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: calc(100vh - #{$header-height});
+  // Make this container smaller than its contents. It allows the sticky logo
+  // to sit above the fold, right under this container when viewing the home
+  // content.
+  height: calc(100vh - #{$content-horizontal-margin + $logo-height});
 
-  // There's no header at the top to compensate for on mobile
-  @media #{$md} {
-    height: 100vh;
+  &__outer {
+    // Center the home content relative to the viewport height and header height
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - #{$header-height});
+
+    // There's no header at the top to compensate for on mobile
+    @media #{$md} {
+      height: 100vh;
+    }
   }
 
   &__inner {

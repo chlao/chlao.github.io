@@ -13,6 +13,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Home />
+    <img className="logo" src="http://via.placeholder.com/75x35" />
   </Layout>
 )
 

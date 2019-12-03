@@ -5,6 +5,15 @@
   // Move the content over the height/width of the header 
   margin-top: $header-height;
   @media #{$md} {
-    margin: 0 40px 0 #{$header-width-xs + 40px};
+    margin: 0 $content-horizontal-margin 0 #{$header-width-xs + $content-horizontal-margin};
   }
+}
+
+.logo {
+  position: sticky;
+  top: $content-horizontal-margin;
+  // Aligns the logo with the edge of the .content container
+  left: 100%;
+
+  @include visible-md-down;
 }
