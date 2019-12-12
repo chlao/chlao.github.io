@@ -6,6 +6,8 @@
   // to sit above the fold, right under this container when viewing the home
   // content.
   height: calc(100vh - #{$content-horizontal-margin + $logo-height});
+  // Override the min-height set on the section to take into account the header
+  min-height: calc(100vh - #{$content-horizontal-margin + $logo-height});
 
   &__outer {
     // Center the home content relative to the viewport height and header height

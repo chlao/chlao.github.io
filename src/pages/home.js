@@ -4,8 +4,8 @@ import "src/styles/home.scss"
 
  const Home = () => {
    return (
-     <div className="home"> 
-       <div className="home__outer">
+     <section className="home">
+       <div className="home__outer section__outer">
         <div className="home__inner">
            <p className="home__overline">Software Engineer</p>
            <h1 className="home__heading">Christine Lao</h1>
@@ -13,7 +13,7 @@ import "src/styles/home.scss"
            <p className="home__underline">Web. Design. Versatility</p>
          </div>
        </div>
-     </div>
+     </section>
    )
  }
 

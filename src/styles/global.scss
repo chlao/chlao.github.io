@@ -17,3 +17,23 @@
 
   @include visible-md-down;
 }
+
+section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.section {
+  &__outer {
+    margin: $section-vertical-margin 0;
+  }
+
+  &__heading {
+    background-color: $tertiary-color;
+    padding: 0 10px;
+    display: inline-block;
+    text-align: center;
+  }
+}

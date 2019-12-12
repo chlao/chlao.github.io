@@ -1,0 +1,52 @@
+@import "variables";
+@import "mixins";
+
+.about-me {
+  &__outer {
+    max-width: 960px;
+    margin: $section-vertical-margin auto;
+    display: flex;
+
+    @media #{$xl} {
+      max-width: 720px;
+      font-size: 12px;
+    }
+
+    @media #{$lg} {
+      max-width: 560px;
+      flex-flow: column wrap;
+    }
+  }
+
+  &__text-inner {
+    // Take up the remaining width inside the flex container
+    flex: 1;
+
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+    line-height: 1.8em;
+    
+    margin-right: 80px;
+
+    @media #{$xl} {
+      font-size: 12px;
+      margin-right: 60px;
+    }
+
+    @media #{$lg} {
+      margin-right: 0;
+    }
+  }
+
+  &__image-inner {
+    width: 35%;
+
+    @media #{$lg} {
+      width: 340px;
+    }
+
+    @media #{$sm} {
+      width: 100%;
+    }
+  }
+}
