@@ -1,0 +1,33 @@
+@import "variables";
+@import "mixins";
+
+.experience {
+  &__heading-inner {
+    width: 40%;
+  }
+}
+
+.entry {
+  &__company {
+    font-family: 'Merriweather', serif;
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  &__position-location {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  &__duration {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  &__duty {
+    margin-bottom: 5px;
+  }
+}

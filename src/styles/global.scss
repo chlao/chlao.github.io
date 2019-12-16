@@ -7,6 +7,13 @@
   @media #{$md} {
     margin: 0 $content-horizontal-margin 0 #{$header-width-xs + $content-horizontal-margin};
   }
+
+  // Main body text, not including headers 
+  font-size: 14px;
+  font-family: 'Merriweather', serif;
+  @media #{$xl} {
+    font-size: 12px;
+  }
 }
 
 .logo {
@@ -28,6 +35,19 @@ section {
 .section {
   &__outer {
     margin: $section-vertical-margin 0;
+    max-width: 960px;
+    margin: $section-vertical-margin auto;
+    display: flex;
+
+    @media #{$xl} {
+      max-width: 720px;
+      font-size: 12px;
+    }
+
+    @media #{$lg} {
+      max-width: 560px;
+      flex-flow: column wrap;
+    }
   }
 
   &__heading {
@@ -35,5 +55,7 @@ section {
     padding: 0 10px;
     display: inline-block;
     text-align: center;
+    font-family: Open Sans, sans-serif;
+    margin-right: 60px;
   }
 }
