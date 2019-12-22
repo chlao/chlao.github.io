@@ -1,6 +1,8 @@
 @import "variables";
 @import "mixins";
 
+$image-border-offset-x: 36px;
+
 .about-me {
   &__text-inner {
     // Take up the remaining width inside the flex container
@@ -20,13 +22,27 @@
 
   &__image-inner {
     width: 35%;
+    height: 100%;
+
+    // Offset border
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 4px solid $secondary-color;
+      left: $image-border-offset-x;
+      top: 36px;
+      z-index: -1;
+    }
 
     @media #{$lg} {
       width: 340px;
     }
 
     @media #{$sm} {
-      width: 100%;
+      width: calc(100% - #{$image-border-offset-x});
     }
   }
 }
