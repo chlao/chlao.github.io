@@ -20,14 +20,6 @@ header {
   display: flex;
   flex-flow: column wrap;
 
-  &__logo {
-    position: absolute;
-    bottom: 0;
-    margin-left: $sceen-margin;
-    @include vertically-centered-absolute-positioning;
-    @include hidden-md-down;
-  }
-
   &__icon-menu {
     display: block;
     text-align: center;

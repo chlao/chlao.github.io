@@ -4,6 +4,7 @@ import React, { useState } from "react"
 import LeftSideBar from '../leftSideBar/leftSideBar'
 import NavMenu from '../navMenu/navMenu'
 import LinksToAdditionalInformation from '../linksToAdditionalInformation/linksToAdditionalInformation'
+import Logo from '../logo'
 
 import "./header.scss"
 
@@ -16,7 +17,7 @@ const Header = () => {
     <header className={`header${open ? " header--open" : ""}`} >
       <span className={`header__icon-menu ${open ? "icon-close" : "icon-bars"}`} onClick={() => { setOpen(!open)}}></span>
       <LeftSideBar headerOpenState={open}/>
-      <img className="header__logo" src="http://via.placeholder.com/75x35" />
+      <Logo className="logo logo--header"/>
       <NavMenu headerOpenState={open}/>
       <LinksToAdditionalInformation headerOpenState={open}/>
     </header>

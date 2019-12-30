@@ -8,6 +8,7 @@ import Home from "./home"
 import AboutMe from "./aboutMe"
 import Experience from "./experience"
 import Skills from "./skills"
+import Logo from '../components/logo'
 
 require('typeface-open-sans')
 require('typeface-merriweather')
@@ -16,10 +17,11 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Home />
-    <img className="logo" src="http://via.placeholder.com/75x35" />
+    <Logo className="logo logo--sticky" />
     <AboutMe />
     <Experience />
     <Skills />
+    <Hobbies />
   </Layout>
 )
 

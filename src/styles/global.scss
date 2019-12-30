@@ -17,12 +17,25 @@
 }
 
 .logo {
-  position: sticky;
-  top: $content-horizontal-margin;
-  // Aligns the logo with the edge of the .content container
-  left: 100%;
+  height: 40px;
+  z-index: 10;
 
-  @include visible-md-down;
+  &--header {
+    position: absolute;
+    bottom: 0;
+    margin-left: $sceen-margin;
+    @include vertically-centered-absolute-positioning;
+    @include hidden-md-down;
+  }
+
+  &--sticky {
+    position: sticky;
+    top: $content-horizontal-margin;
+    // Aligns the logo with the edge of the .content container
+    left: 100%;
+
+    @include visible-md-down;
+  }
 }
 
 section {
