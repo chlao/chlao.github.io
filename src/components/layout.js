@@ -12,6 +12,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header  from "./header/header"
 import LeftSideBar  from "./leftSideBar/leftSideBar"
 import LinksToAdditionalInformation  from "./linksToAdditionalInformation/linksToAdditionalInformation"
+import Footer from './footer/footer'
+
 import "./layout.scss"
 
 import "../styles/global.scss"
@@ -35,11 +37,7 @@ const Layout = ({ children }) => {
       <LinksToAdditionalInformation isDesktop={true} />
       <div className="content">
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <Footer />
       </div>
     </>
   )

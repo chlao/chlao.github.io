@@ -1,0 +1,13 @@
+@import "variables";
+
+footer {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: $background-text-color;
+}
+
+.footer {
+  &__created-by {
+    margin-bottom: 0;
+  }
+}
