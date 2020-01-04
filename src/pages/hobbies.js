@@ -1,7 +1,7 @@
 import React from "react"
 
 const Hobbies = () => (
-  <section className="hobbies">
+  <section id="hobbies" className="hobbies">
     <div className="hobbies__outer section__outer">
       <div className="hobbies__heading-inner">
         <h2 className="section__heading"> Hobbies </h2>

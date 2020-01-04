@@ -52,6 +52,13 @@ section {
     margin: $section-vertical-margin auto;
     display: flex;
 
+    // Leave space for the header nav menu when jumping to the section via the
+    // header navigation on desktop. This allows the start of a section to sit
+    // right below the header nav. 
+    @media #{$md-up} {
+      margin: #{$header-height + 10px} auto;
+    }
+
     @media #{$xl} {
       max-width: 720px;
       font-size: 12px;

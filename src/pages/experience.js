@@ -3,7 +3,7 @@ import React from "react"
 import "src/styles/experience.scss"
 
 const Experience = () => (
-  <section className="experience">
+  <section id="experience" className="experience">
     <div className="experience__outer section__outer">
       <div className="experience__heading-inner">
         <h2 className="section__heading"> Experience </h2>

@@ -4,7 +4,7 @@ import ProfileImage from "../components/profileImage"
 import "src/styles/aboutMe.scss"
 
 const AboutMe = () => (
-  <section className="about-me">
+  <section id="about-me" className="about-me">
     <div className="about-me__outer section__outer">
       <div className="about-me__text-inner">
         <h2 className="section__heading"> About Me </h2>
