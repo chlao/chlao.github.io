@@ -8,13 +8,13 @@ const LinksToAdditionalInformation = ({ headerOpenState, isDesktop }) => {
 
   return (
     <div className={`links-to-additional-information${headerOpenClass}${isDesktopClass}`}>
-      <a href="" className="links-to-additional-information__link links-to-additional-information__link--email">
+      <a href="mailto:christinelao3o@gmail.com" className="links-to-additional-information__link links-to-additional-information__link--email">
         <span className="icon-envelope-o"></span>
       </a>
-      <a href="" className="links-to-additional-information__link links-to-additional-information__linkk--linked-in">
+      <a href="https://www.linkedin.com/in/christinelao3o/" className="links-to-additional-information__link links-to-additional-information__link--linked-in">
         <span className="icon-linkedin-square"></span>
       </a>
-      <a href="" className="links-to-additional-information__link links-to-additional-information__link--resume">Resume</a>
+      <a href="/Resume.pdf" target="_blank" className="links-to-additional-information__link links-to-additional-information__link--resume">Resume</a>
     </div>
   )
 }
