@@ -9,15 +9,15 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header  from "./header/header"
-import LeftSideBar  from "./leftSideBar/leftSideBar"
-import LinksToAdditionalInformation  from "./linksToAdditionalInformation/linksToAdditionalInformation"
-import Footer from './footer/footer'
+import Header  from "../header/header"
+import LeftSideBar  from "../leftSideBar/leftSideBar"
+import LinksToAdditionalInformation  from "../linksToAdditionalInformation/linksToAdditionalInformation"
+import Footer from '../footer/footer'
 
 import "./layout.scss"
 
-import "../styles/global.scss"
-import "../icons/style.css"
+import "../../styles/global.scss"
+import "../../icons/style.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
