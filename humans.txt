@@ -3,13 +3,14 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Christine Lao -- Designer & Developer 
 
 # THANKS
 
-    <name>
+    Terry Thunder Tsai
 
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
     Apache Server Configs, jQuery, Modernizr, Normalize.css
+    Gatsby
