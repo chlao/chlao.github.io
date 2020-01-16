@@ -39,9 +39,9 @@
 }
 
 section {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
+  @include flex-display;
+  @include flex-flow-column-wrap;
+  @include flex-justify-content(center);
   min-height: 100vh;
 }
 
@@ -50,7 +50,8 @@ section {
     margin: $section-vertical-margin 0;
     max-width: 960px;
     margin: $section-vertical-margin auto;
-    display: flex;
+
+    @include flex-display;
 
     // Leave space for the header nav menu when jumping to the section via the
     // header navigation on desktop. This allows the start of a section to sit
@@ -66,7 +67,7 @@ section {
 
     @media #{$lg} {
       max-width: 560px;
-      flex-flow: column wrap;
+      @include flex-flow-column-wrap;
     }
   }
 

@@ -11,10 +11,10 @@
 
   &__outer {
     // Center the home content relative to the viewport height and header height
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
+    @include flex-display;
+    @include flex-flow-column-wrap;
+    @include flex-align-items(center);
+    @include flex-justify-content(center);
     height: calc(100vh - #{$header-height});
 
     // There's no header at the top to compensate for on mobile

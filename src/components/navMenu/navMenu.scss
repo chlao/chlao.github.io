@@ -28,11 +28,12 @@
 
   @media #{$md} {
     &--open {
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: center;
+      @include flex-display;
+      @include flex-flow-column-wrap;
+      @include flex-justify-content(center);
+      @include flex(1, 0);
+
       text-align: left;
-      flex: 1 0 auto;
 
       @at-root #{&} .nav-menu__link {
         margin: 20px $nav-menu-link-horizontal-margin-lg;

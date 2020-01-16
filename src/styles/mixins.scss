@@ -1,4 +1,5 @@
 @import "variables";
+@import "vendorPrefixMixins";
 
 @mixin vertically-centered-absolute-positioning {
   top: 50%;
@@ -15,23 +16,6 @@
   @include writing-mode(vertical-lr);
   @include text-orientation(sideways);
   @include transform(rotate(180deg));
-}
-
-@mixin transform($transforms) {
-  -webkit-transform: $transforms;
-  -ms-transform: $transforms;
-  transform: $transforms;
-}
-
-@mixin writing-mode($writing-mode) {
-  -webkit-writing-mode: $writing-mode;
-  -ms-writing-mode: $writing-mode;
-  writing-mode: $writing-mode;
-}
-
-@mixin text-orientation($text-orientation) {
-  -webkit-text-orientation: $text-orientation;
-  text-orientation: $text-orientation;
 }
 
 @mixin hidden-md-down {

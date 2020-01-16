@@ -6,7 +6,7 @@ $image-border-offset-x: 36px;
 .about-me {
   &__text-inner {
     // Take up the remaining width inside the flex container
-    flex: 1;
+    @include flex(1);
     line-height: 1.8em;
 
     margin-right: 80px;

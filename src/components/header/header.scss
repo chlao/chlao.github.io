@@ -17,8 +17,8 @@ header {
 }
 
 .header {
-  display: flex;
-  flex-flow: column wrap;
+  @include flex-display;
+  @include flex-flow-column-wrap;
 
   &__icon-menu {
     display: block;

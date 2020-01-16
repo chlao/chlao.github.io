@@ -5,15 +5,15 @@ $skills-group-margin: 24px;
 
 .skills {
   &__outer {
-    flex-flow: column wrap;
+    @include flex-flow-column-wrap;
   }
 
   &__text-inner {
-    column-count: 2;
-    column-gap: $skills-group-margin;
+    @include column-count(2);
+    @include column-gap($skills-group-margin)
 
     @media #{$md} {
-      column-count: 1;
+      @include column-count(1);
     }
   }
 
@@ -23,7 +23,7 @@ $skills-group-margin: 24px;
     display: inline-block;
     width: 100%;
     margin: 0 0 $skills-group-margin;
-    filter: drop-shadow(5px 5px 0 #{$shadow-color});
+    @include filter(drop-shadow(5px 5px 0 #{$shadow-color}));
   }
 
   &__heading-inner {
