@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import "./linksToAdditionalInformation.scss"
@@ -41,3 +42,13 @@ const LinksToAdditionalInformation = ({ headerOpenState, isDesktop }) => {
 }
 
 export default LinksToAdditionalInformation
+
+LinksToAdditionalInformation.propTypes = {
+  headerOpenState: PropTypes.bool,
+  isDesktop: PropTypes.bool
+}
+
+LinksToAdditionalInformation.defaultProps = {
+  headerOpenState: false,
+  isDesktop: false
+}

@@ -11,12 +11,7 @@ const NavMenuItem = ({ menuItem }) => (
 )
 
 NavMenuItem.propTypes = {
-  heading: PropTypes.string,
-}
-
-// TODO: This should not exist if empty? Although, it shouldn't ever be empty
-NavMenuItem.defaultProps = {
-  heading: ``,
+  menuItem: PropTypes.object.isRequired,
 }
 
 export default NavMenuItem

@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import NavMenuItem from "./navMenuItem"
@@ -38,3 +39,11 @@ const NavMenu = ({ headerOpenState }) => {
 }
 
 export default NavMenu
+
+NavMenu.propTypes = {
+  headerOpenState: PropTypes.bool
+}
+
+NavMenu.defaultProps = {
+  headerOpenState: false
+}

@@ -1,4 +1,3 @@
-import PropTypes from "prop-types"
 import React, { useState } from "react"
 
 import LeftSideBar from '../leftSideBar/leftSideBar'
@@ -22,14 +21,6 @@ const Header = () => {
       <LinksToAdditionalInformation headerOpenState={open}/>
     </header>
   )
-}
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
 }
 
 export default Header

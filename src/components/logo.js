@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import logo from "../images/logo.svg"
 
 const Logo = ({className}) => {
@@ -8,3 +9,7 @@ const Logo = ({className}) => {
 }
 
 export default Logo
+
+Logo.propTypes = {
+  className: PropTypes.string
+}

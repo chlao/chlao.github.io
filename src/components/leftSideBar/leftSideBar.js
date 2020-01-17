@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 import React from "react"
 
 import "./leftSideBar.scss"
@@ -15,3 +16,13 @@ const LeftSideBar = ({headerOpenState, isDesktop}) => {
 }
 
 export default LeftSideBar
+
+LeftSideBar.propTypes = {
+  headerOpenState: PropTypes.bool,
+  isDesktop: PropTypes.bool
+}
+
+LeftSideBar.defaultProps = {
+  headerOpenState: false,
+  isDesktop: false
+}
