@@ -1,14 +1,13 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
 const NavMenuItem = ({ menuItem }) => (
-  <Link
-    to={menuItem.link}
+  <a
+    href={menuItem.link}
     className="nav-menu__link"
     >
     {menuItem.heading}
-  </Link>
+  </a>
 )
 
 NavMenuItem.propTypes = {
