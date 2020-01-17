@@ -26,7 +26,10 @@ const ProfileImage = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img
+    fluid={data.placeholderImage.childImageSharp.fluid}
+    alt="Christine Lao"
+  />
 }
 
 export default ProfileImage
