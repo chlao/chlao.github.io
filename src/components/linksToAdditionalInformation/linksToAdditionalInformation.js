@@ -35,7 +35,7 @@ const LinksToAdditionalInformation = ({ headerOpenState, isDesktop }) => {
       <a href="https://www.linkedin.com/in/christinelao3o/" className="links-to-additional-information__link links-to-additional-information__link--linked-in">
         <span className="icon-linkedin-square"></span>
       </a>
-      <a href={resumeUrl} target="_blank" className="links-to-additional-information__link links-to-additional-information__link--resume">Resume</a>
+      <a href={resumeUrl} target="_blank" rel="noopener noreferrer" className="links-to-additional-information__link links-to-additional-information__link--resume">Resume</a>
     </div>
   )
 }
