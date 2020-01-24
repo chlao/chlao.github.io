@@ -1,4 +1,4 @@
-// Used to read secrets from the .env file 
+// Used to read secrets from the .env file
 require('dotenv').config()
 
 module.exports = {
@@ -10,13 +10,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
